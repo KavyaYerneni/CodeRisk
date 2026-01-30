@@ -1,0 +1,25 @@
+seed: 42
+mode: training
+dataset:
+  path: data/processed/demo/dataset.parquet
+split:
+  strategy: repository_time
+  test_size: 0.2
+  val_size: 0.1
+xgboost:
+  n_estimators: 200
+  max_depth: 5
+  learning_rate: 0.05
+  subsample: 0.85
+  colsample_bytree: 0.85
+  min_child_weight: 3
+  reg_lambda: 1.5
+  scale_pos_weight: null
+codebert:
+  model_name: microsoft/codebert-base
+  max_length: 512
+  epochs: 3
+  batch_size: 8
+  grad_accum: 4
+  learning_rate: 2.0e-5
+  max_train_samples: null

@@ -1,0 +1,11 @@
+seed: 42
+project_name: coderisk
+paths:
+  data_raw: data/raw
+  data_interim: data/interim
+  data_processed: data/processed
+  artifacts: artifacts
+  reports: reports
+logging:
+  level: INFO
+  json: false
