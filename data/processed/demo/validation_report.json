@@ -1,0 +1,9 @@
+{
+  "n_rows": 120,
+  "n_positive": 43,
+  "n_negative": 77,
+  "positive_rate": 0.3583,
+  "n_repositories": 5,
+  "is_synthetic": true,
+  "label_source": "synthetic_demo"
+}

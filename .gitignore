@@ -27,8 +27,8 @@ data/processed/**
 !data/processed/demo/validation_report.json
 !data/processed/demo/dataset.csv
 data/processed/demo/*.parquet
-models/
-artifacts/
+/models/
+/artifacts/
 *.joblib
 *.pkl
 *.pt

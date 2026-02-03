@@ -1,0 +1,4441 @@
+repository,pull_request_id,commit_sha,parent_sha,author,author_tenure_days,files_changed,lines_added,lines_deleted,file_churn,diff_text,bug_introducing_label,label_source,timestamp,is_synthetic
+demo/payments-service,1000,7deee269642e63aab6e5ca1d0a2292c756b1c1b0,4937e40c921ad360250fb701625a4ecbb492191d,alice,10.0,3,47,3,50.0,"diff --git a/src/module_0/file_0.py b/src/module_0/file_0.py
+--- a/src/module_0/file_0.py
++++ b/src/module_0/file_0.py
+@@ -1,3 +1,18 @@
+ def fn_0():
+-    return 3
++    # FIXME risky null deref
++    return 47
+diff --git a/src/module_0/file_1.py b/src/module_0/file_1.py
+--- a/src/module_0/file_1.py
++++ b/src/module_0/file_1.py
+@@ -1,3 +1,18 @@
+ def fn_1():
+-    return 3
++    # FIXME risky null deref
++    return 48
+diff --git a/src/module_0/file_2.py b/src/module_0/file_2.py
+--- a/src/module_0/file_2.py
++++ b/src/module_0/file_2.py
+@@ -1,3 +1,18 @@
+ def fn_2():
+-    return 3
++    # FIXME risky null deref
++    return 49
+",1,synthetic_demo,2025-06-01 12:00:00+00:00,True
+demo/inventory-api,1001,39824e4462ac88d8793c733c72d87c281a8721fc,7b60870b3c0462c6221456a58761d8fc6a6b423f,bob,23.0,6,54,8,62.0,"diff --git a/src/module_1/file_0.py b/src/module_1/file_0.py
+--- a/src/module_1/file_0.py
++++ b/src/module_1/file_0.py
+@@ -1,3 +1,12 @@
+ def fn_0():
+-    return 8
++    # refactor helper
++    return 54
+diff --git a/src/module_1/file_1.py b/src/module_1/file_1.py
+--- a/src/module_1/file_1.py
++++ b/src/module_1/file_1.py
+@@ -1,3 +1,12 @@
+ def fn_1():
+-    return 8
++    # refactor helper
++    return 55
+diff --git a/src/module_1/file_2.py b/src/module_1/file_2.py
+--- a/src/module_1/file_2.py
++++ b/src/module_1/file_2.py
+@@ -1,3 +1,12 @@
+ def fn_2():
+-    return 8
++    # refactor helper
++    return 56
+diff --git a/src/module_1/file_3.py b/src/module_1/file_3.py
+--- a/src/module_1/file_3.py
++++ b/src/module_1/file_3.py
+@@ -1,3 +1,12 @@
+ def fn_3():
+-    return 8
++    # refactor helper
++    return 57
+diff --git a/src/module_1/file_4.py b/src/module_1/file_4.py
+--- a/src/module_1/file_4.py
++++ b/src/module_1/file_4.py
+@@ -1,3 +1,12 @@
+ def fn_4():
+-    return 8
++    # refactor helper
++    return 58
+diff --git a/src/module_1/file_5.py b/src/module_1/file_5.py
+--- a/src/module_1/file_5.py
++++ b/src/module_1/file_5.py
+@@ -1,3 +1,12 @@
+ def fn_5():
+-    return 8
++    # refactor helper
++    return 59
+",0,synthetic_demo,2025-06-01 13:00:00+00:00,True
+demo/auth-gateway,1002,54ef043eac030f90fc3fa904372db820a14f3167,cc1e78442fcd2c7ae37d6ae929dd787ed793ef60,carol,36.0,1,61,13,74.0,"diff --git a/src/module_2/file_0.py b/src/module_2/file_0.py
+--- a/src/module_2/file_0.py
++++ b/src/module_2/file_0.py
+@@ -1,3 +1,64 @@
+ def fn_0():
+-    return 13
++    # refactor helper
++    return 61
+",0,synthetic_demo,2025-06-01 14:00:00+00:00,True
+demo/billing-worker,1003,68bc51d385681502451e6077d252317b5fc883d7,42b1a678a171c68f8cf4190f0de368ea93d3dab6,dave,49.0,4,68,18,86.0,"diff --git a/src/module_3/file_0.py b/src/module_3/file_0.py
+--- a/src/module_3/file_0.py
++++ b/src/module_3/file_0.py
+@@ -1,3 +1,20 @@
+ def fn_0():
+-    return 18
++    # refactor helper
++    return 68
+diff --git a/src/module_3/file_1.py b/src/module_3/file_1.py
+--- a/src/module_3/file_1.py
++++ b/src/module_3/file_1.py
+@@ -1,3 +1,20 @@
+ def fn_1():
+-    return 18
++    # refactor helper
++    return 69
+diff --git a/src/module_3/file_2.py b/src/module_3/file_2.py
+--- a/src/module_3/file_2.py
++++ b/src/module_3/file_2.py
+@@ -1,3 +1,20 @@
+ def fn_2():
+-    return 18
++    # refactor helper
++    return 70
+diff --git a/src/module_3/file_3.py b/src/module_3/file_3.py
+--- a/src/module_3/file_3.py
++++ b/src/module_3/file_3.py
+@@ -1,3 +1,20 @@
+ def fn_3():
+-    return 18
++    # refactor helper
++    return 71
+",0,synthetic_demo,2025-06-01 15:00:00+00:00,True
+demo/search-indexer,1004,00d7fb76208e4d6cdf771e2567c18df10a48da0a,d94446e0acb655ae7262c1b7e87b690af9efc45b,erin,62.0,7,75,23,98.0,"diff --git a/src/module_4/file_0.py b/src/module_4/file_0.py
+--- a/src/module_4/file_0.py
++++ b/src/module_4/file_0.py
+@@ -1,3 +1,13 @@
+ def fn_0():
+-    return 23
++    # FIXME risky null deref
++    return 75
+diff --git a/src/module_4/file_1.py b/src/module_4/file_1.py
+--- a/src/module_4/file_1.py
++++ b/src/module_4/file_1.py
+@@ -1,3 +1,13 @@
+ def fn_1():
+-    return 23
++    # FIXME risky null deref
++    return 76
+diff --git a/src/module_4/file_2.py b/src/module_4/file_2.py
+--- a/src/module_4/file_2.py
++++ b/src/module_4/file_2.py
+@@ -1,3 +1,13 @@
+ def fn_2():
+-    return 23
++    # FIXME risky null deref
++    return 77
+diff --git a/src/module_4/file_3.py b/src/module_4/file_3.py
+--- a/src/module_4/file_3.py
++++ b/src/module_4/file_3.py
+@@ -1,3 +1,13 @@
+ def fn_3():
+-    return 23
++    # FIXME risky null deref
++    return 78
+diff --git a/src/module_4/file_4.py b/src/module_4/file_4.py
+--- a/src/module_4/file_4.py
++++ b/src/module_4/file_4.py
+@@ -1,3 +1,13 @@
+ def fn_4():
+-    return 23
++    # FIXME risky null deref
++    return 79
+diff --git a/src/module_4/file_5.py b/src/module_4/file_5.py
+--- a/src/module_4/file_5.py
++++ b/src/module_4/file_5.py
+@@ -1,3 +1,13 @@
+ def fn_5():
+-    return 23
++    # FIXME risky null deref
++    return 80
+diff --git a/src/module_4/file_6.py b/src/module_4/file_6.py
+--- a/src/module_4/file_6.py
++++ b/src/module_4/file_6.py
+@@ -1,3 +1,13 @@
+ def fn_6():
+-    return 23
++    # FIXME risky null deref
++    return 81
+",1,synthetic_demo,2025-06-01 16:00:00+00:00,True
+demo/payments-service,1005,5dbca0fb3e0ff5180c2df0202cda7f6a97cb7573,517b1ef37d6a5a466bad35ea0d02b4eb41ac6bb0,frank,75.0,2,82,28,110.0,"diff --git a/src/module_5/file_0.py b/src/module_5/file_0.py
+--- a/src/module_5/file_0.py
++++ b/src/module_5/file_0.py
+@@ -1,3 +1,44 @@
+ def fn_0():
+-    return 28
++    # refactor helper
++    return 82
+diff --git a/src/module_5/file_1.py b/src/module_5/file_1.py
+--- a/src/module_5/file_1.py
++++ b/src/module_5/file_1.py
+@@ -1,3 +1,44 @@
+ def fn_1():
+-    return 28
++    # refactor helper
++    return 83
+",0,synthetic_demo,2025-06-03 17:00:00+00:00,True
+demo/inventory-api,1006,b63a560621cb23b0fac355ad74e0fbf233fe6547,9b223f37e460026ccccc977c8efea647fcb33da3,alice,88.0,5,89,33,122.0,"diff --git a/src/module_6/file_0.py b/src/module_6/file_0.py
+--- a/src/module_6/file_0.py
++++ b/src/module_6/file_0.py
+@@ -1,3 +1,20 @@
+ def fn_0():
+-    return 33
++    # FIXME risky null deref
++    return 89
+diff --git a/src/module_6/file_1.py b/src/module_6/file_1.py
+--- a/src/module_6/file_1.py
++++ b/src/module_6/file_1.py
+@@ -1,3 +1,20 @@
+ def fn_1():
+-    return 33
++    # FIXME risky null deref
++    return 90
+diff --git a/src/module_6/file_2.py b/src/module_6/file_2.py
+--- a/src/module_6/file_2.py
++++ b/src/module_6/file_2.py
+@@ -1,3 +1,20 @@
+ def fn_2():
+-    return 33
++    # FIXME risky null deref
++    return 91
+diff --git a/src/module_6/file_3.py b/src/module_6/file_3.py
+--- a/src/module_6/file_3.py
++++ b/src/module_6/file_3.py
+@@ -1,3 +1,20 @@
+ def fn_3():
+-    return 33
++    # FIXME risky null deref
++    return 92
+diff --git a/src/module_6/file_4.py b/src/module_6/file_4.py
+--- a/src/module_6/file_4.py
++++ b/src/module_6/file_4.py
+@@ -1,3 +1,20 @@
+ def fn_4():
+-    return 33
++    # FIXME risky null deref
++    return 93
+",1,synthetic_demo,2025-06-03 18:00:00+00:00,True
+demo/auth-gateway,1007,ba2c89c35562da8ee57de44b01b770a75502e0a6,68cbc11b210486f3d60a328fbddb39cecf60de75,bob,101.0,8,96,38,134.0,"diff --git a/src/module_0/file_0.py b/src/module_0/file_0.py
+--- a/src/module_0/file_0.py
++++ b/src/module_0/file_0.py
+@@ -1,3 +1,15 @@
+ def fn_0():
+-    return 38
++    # refactor helper
++    return 96
+diff --git a/src/module_0/file_1.py b/src/module_0/file_1.py
+--- a/src/module_0/file_1.py
++++ b/src/module_0/file_1.py
+@@ -1,3 +1,15 @@
+ def fn_1():
+-    return 38
++    # refactor helper
++    return 97
+diff --git a/src/module_0/file_2.py b/src/module_0/file_2.py
+--- a/src/module_0/file_2.py
++++ b/src/module_0/file_2.py
+@@ -1,3 +1,15 @@
+ def fn_2():
+-    return 38
++    # refactor helper
++    return 98
+diff --git a/src/module_0/file_3.py b/src/module_0/file_3.py
+--- a/src/module_0/file_3.py
++++ b/src/module_0/file_3.py
+@@ -1,3 +1,15 @@
+ def fn_3():
+-    return 38
++    # refactor helper
++    return 99
+diff --git a/src/module_0/file_4.py b/src/module_0/file_4.py
+--- a/src/module_0/file_4.py
++++ b/src/module_0/file_4.py
+@@ -1,3 +1,15 @@
+ def fn_4():
+-    return 38
++    # refactor helper
++    return 100
+diff --git a/src/module_0/file_5.py b/src/module_0/file_5.py
+--- a/src/module_0/file_5.py
++++ b/src/module_0/file_5.py
+@@ -1,3 +1,15 @@
+ def fn_5():
+-    return 38
++    # refactor helper
++    return 101
+diff --git a/src/module_0/file_6.py b/src/module_0/file_6.py
+--- a/src/module_0/file_6.py
++++ b/src/module_0/file_6.py
+@@ -1,3 +1,15 @@
+ def fn_6():
+-    return 38
++    # refactor helper
++    return 102
+diff --git a/src/module_0/file_7.py b/src/module_0/file_7.py
+--- a/src/module_0/file_7.py
++++ b/src/module_0/file_7.py
+@@ -1,3 +1,15 @@
+ def fn_7():
+-    return 38
++    # refactor helper
++    return 103
+",0,synthetic_demo,2025-06-03 19:00:00+00:00,True
+demo/billing-worker,1008,5d556b0721391acc07a48c3a219ea3002734c1a4,0158c8c0c6e07489a0e97745c75daa72f4822246,carol,114.0,3,103,3,106.0,"diff --git a/src/module_1/file_0.py b/src/module_1/file_0.py
+--- a/src/module_1/file_0.py
++++ b/src/module_1/file_0.py
+@@ -1,3 +1,37 @@
+ def fn_0():
+-    return 3
++    # refactor helper
++    return 103
+diff --git a/src/module_1/file_1.py b/src/module_1/file_1.py
+--- a/src/module_1/file_1.py
++++ b/src/module_1/file_1.py
+@@ -1,3 +1,37 @@
+ def fn_1():
+-    return 3
++    # refactor helper
++    return 104
+diff --git a/src/module_1/file_2.py b/src/module_1/file_2.py
+--- a/src/module_1/file_2.py
++++ b/src/module_1/file_2.py
+@@ -1,3 +1,37 @@
+ def fn_2():
+-    return 3
++    # refactor helper
++    return 105
+",0,synthetic_demo,2025-06-03 20:00:00+00:00,True
+demo/search-indexer,1009,b41095bfc3a92217da67f99e42536921e5f46917,958b34670f523978883e24bea29b9decd0d24235,dave,127.0,6,110,8,118.0,"diff --git a/src/module_2/file_0.py b/src/module_2/file_0.py
+--- a/src/module_2/file_0.py
++++ b/src/module_2/file_0.py
+@@ -1,3 +1,21 @@
+ def fn_0():
+-    return 8
++    # FIXME risky null deref
++    return 110
+diff --git a/src/module_2/file_1.py b/src/module_2/file_1.py
+--- a/src/module_2/file_1.py
++++ b/src/module_2/file_1.py
+@@ -1,3 +1,21 @@
+ def fn_1():
+-    return 8
++    # FIXME risky null deref
++    return 111
+diff --git a/src/module_2/file_2.py b/src/module_2/file_2.py
+--- a/src/module_2/file_2.py
++++ b/src/module_2/file_2.py
+@@ -1,3 +1,21 @@
+ def fn_2():
+-    return 8
++    # FIXME risky null deref
++    return 112
+diff --git a/src/module_2/file_3.py b/src/module_2/file_3.py
+--- a/src/module_2/file_3.py
++++ b/src/module_2/file_3.py
+@@ -1,3 +1,21 @@
+ def fn_3():
+-    return 8
++    # FIXME risky null deref
++    return 113
+diff --git a/src/module_2/file_4.py b/src/module_2/file_4.py
+--- a/src/module_2/file_4.py
++++ b/src/module_2/file_4.py
+@@ -1,3 +1,21 @@
+ def fn_4():
+-    return 8
++    # FIXME risky null deref
++    return 114
+diff --git a/src/module_2/file_5.py b/src/module_2/file_5.py
+--- a/src/module_2/file_5.py
++++ b/src/module_2/file_5.py
+@@ -1,3 +1,21 @@
+ def fn_5():
+-    return 8
++    # FIXME risky null deref
++    return 115
+",1,synthetic_demo,2025-06-03 21:00:00+00:00,True
+demo/payments-service,1010,87a746efc62c426e11bafc1771865952aad38ed4,050bcac52449942548b555359d1f9ffbdc446ca4,erin,140.0,1,117,13,130.0,"diff --git a/src/module_3/file_0.py b/src/module_3/file_0.py
+--- a/src/module_3/file_0.py
++++ b/src/module_3/file_0.py
+@@ -1,3 +1,120 @@
+ def fn_0():
+-    return 13
++    # refactor helper
++    return 117
+",0,synthetic_demo,2025-06-05 22:00:00+00:00,True
+demo/inventory-api,1011,72427c7ad5eab524c44bfbe9c335cba4400e1d36,e3fbfff9bf88b2249437629c261763b9d5739a3b,frank,153.0,4,124,18,142.0,"diff --git a/src/module_4/file_0.py b/src/module_4/file_0.py
+--- a/src/module_4/file_0.py
++++ b/src/module_4/file_0.py
+@@ -1,3 +1,34 @@
+ def fn_0():
+-    return 18
++    # refactor helper
++    return 124
+diff --git a/src/module_4/file_1.py b/src/module_4/file_1.py
+--- a/src/module_4/file_1.py
++++ b/src/module_4/file_1.py
+@@ -1,3 +1,34 @@
+ def fn_1():
+-    return 18
++    # refactor helper
++    return 125
+diff --git a/src/module_4/file_2.py b/src/module_4/file_2.py
+--- a/src/module_4/file_2.py
++++ b/src/module_4/file_2.py
+@@ -1,3 +1,34 @@
+ def fn_2():
+-    return 18
++    # refactor helper
++    return 126
+diff --git a/src/module_4/file_3.py b/src/module_4/file_3.py
+--- a/src/module_4/file_3.py
++++ b/src/module_4/file_3.py
+@@ -1,3 +1,34 @@
+ def fn_3():
+-    return 18
++    # refactor helper
++    return 127
+",0,synthetic_demo,2025-06-05 23:00:00+00:00,True
+demo/auth-gateway,1012,e7f5d208f7230ef1caca8eb2428c9acde50ff77e,f5f6b18844d43990ec77bbeeb06b218f6f23ea1a,alice,166.0,7,11,23,34.0,"diff --git a/src/module_5/file_0.py b/src/module_5/file_0.py
+--- a/src/module_5/file_0.py
++++ b/src/module_5/file_0.py
+@@ -1,3 +1,4 @@
+ def fn_0():
+-    return 23
++    # refactor helper
++    return 11
+diff --git a/src/module_5/file_1.py b/src/module_5/file_1.py
+--- a/src/module_5/file_1.py
++++ b/src/module_5/file_1.py
+@@ -1,3 +1,4 @@
+ def fn_1():
+-    return 23
++    # refactor helper
++    return 12
+diff --git a/src/module_5/file_2.py b/src/module_5/file_2.py
+--- a/src/module_5/file_2.py
++++ b/src/module_5/file_2.py
+@@ -1,3 +1,4 @@
+ def fn_2():
+-    return 23
++    # refactor helper
++    return 13
+diff --git a/src/module_5/file_3.py b/src/module_5/file_3.py
+--- a/src/module_5/file_3.py
++++ b/src/module_5/file_3.py
+@@ -1,3 +1,4 @@
+ def fn_3():
+-    return 23
++    # refactor helper
++    return 14
+diff --git a/src/module_5/file_4.py b/src/module_5/file_4.py
+--- a/src/module_5/file_4.py
++++ b/src/module_5/file_4.py
+@@ -1,3 +1,4 @@
+ def fn_4():
+-    return 23
++    # refactor helper
++    return 15
+diff --git a/src/module_5/file_5.py b/src/module_5/file_5.py
+--- a/src/module_5/file_5.py
++++ b/src/module_5/file_5.py
+@@ -1,3 +1,4 @@
+ def fn_5():
+-    return 23
++    # refactor helper
++    return 16
+diff --git a/src/module_5/file_6.py b/src/module_5/file_6.py
+--- a/src/module_5/file_6.py
++++ b/src/module_5/file_6.py
+@@ -1,3 +1,4 @@
+ def fn_6():
+-    return 23
++    # refactor helper
++    return 17
+",0,synthetic_demo,2025-06-06 00:00:00+00:00,True
+demo/billing-worker,1013,2c795d37bb0d27f6488119923e954d732c774d53,daa69007e5f542119a17540e9789a8f5876653f9,bob,179.0,2,18,28,46.0,"diff --git a/src/module_6/file_0.py b/src/module_6/file_0.py
+--- a/src/module_6/file_0.py
++++ b/src/module_6/file_0.py
+@@ -1,3 +1,12 @@
+ def fn_0():
+-    return 28
++    # refactor helper
++    return 18
+diff --git a/src/module_6/file_1.py b/src/module_6/file_1.py
+--- a/src/module_6/file_1.py
++++ b/src/module_6/file_1.py
+@@ -1,3 +1,12 @@
+ def fn_1():
+-    return 28
++    # refactor helper
++    return 19
+",0,synthetic_demo,2025-06-06 01:00:00+00:00,True
+demo/search-indexer,1014,d1c09a0b32dd03faefdd59d0c6f7a4d648781c6e,ecf72ec468667d339b41d24c441d7c35786abb07,carol,192.0,5,25,33,58.0,"diff --git a/src/module_0/file_0.py b/src/module_0/file_0.py
+--- a/src/module_0/file_0.py
++++ b/src/module_0/file_0.py
+@@ -1,3 +1,8 @@
+ def fn_0():
+-    return 33
++    # refactor helper
++    return 25
+diff --git a/src/module_0/file_1.py b/src/module_0/file_1.py
+--- a/src/module_0/file_1.py
++++ b/src/module_0/file_1.py
+@@ -1,3 +1,8 @@
+ def fn_1():
+-    return 33
++    # refactor helper
++    return 26
+diff --git a/src/module_0/file_2.py b/src/module_0/file_2.py
+--- a/src/module_0/file_2.py
++++ b/src/module_0/file_2.py
+@@ -1,3 +1,8 @@
+ def fn_2():
+-    return 33
++    # refactor helper
++    return 27
+diff --git a/src/module_0/file_3.py b/src/module_0/file_3.py
+--- a/src/module_0/file_3.py
++++ b/src/module_0/file_3.py
+@@ -1,3 +1,8 @@
+ def fn_3():
+-    return 33
++    # refactor helper
++    return 28
+diff --git a/src/module_0/file_4.py b/src/module_0/file_4.py
+--- a/src/module_0/file_4.py
++++ b/src/module_0/file_4.py
+@@ -1,3 +1,8 @@
+ def fn_4():
+-    return 33
++    # refactor helper
++    return 29
+",0,synthetic_demo,2025-06-06 02:00:00+00:00,True
+demo/payments-service,1015,574939b6a69c76cc786cbd07d5aea2d3cb96b885,311250bd93ac209309144310632d8b039dfbf13d,dave,205.0,8,32,38,70.0,"diff --git a/src/module_1/file_0.py b/src/module_1/file_0.py
+--- a/src/module_1/file_0.py
++++ b/src/module_1/file_0.py
+@@ -1,3 +1,7 @@
+ def fn_0():
+-    return 38
++    # refactor helper
++    return 32
+diff --git a/src/module_1/file_1.py b/src/module_1/file_1.py
+--- a/src/module_1/file_1.py
++++ b/src/module_1/file_1.py
+@@ -1,3 +1,7 @@
+ def fn_1():
+-    return 38
++    # refactor helper
++    return 33
+diff --git a/src/module_1/file_2.py b/src/module_1/file_2.py
+--- a/src/module_1/file_2.py
++++ b/src/module_1/file_2.py
+@@ -1,3 +1,7 @@
+ def fn_2():
+-    return 38
++    # refactor helper
++    return 34
+diff --git a/src/module_1/file_3.py b/src/module_1/file_3.py
+--- a/src/module_1/file_3.py
++++ b/src/module_1/file_3.py
+@@ -1,3 +1,7 @@
+ def fn_3():
+-    return 38
++    # refactor helper
++    return 35
+diff --git a/src/module_1/file_4.py b/src/module_1/file_4.py
+--- a/src/module_1/file_4.py
++++ b/src/module_1/file_4.py
+@@ -1,3 +1,7 @@
+ def fn_4():
+-    return 38
++    # refactor helper
++    return 36
+diff --git a/src/module_1/file_5.py b/src/module_1/file_5.py
+--- a/src/module_1/file_5.py
++++ b/src/module_1/file_5.py
+@@ -1,3 +1,7 @@
+ def fn_5():
+-    return 38
++    # refactor helper
++    return 37
+diff --git a/src/module_1/file_6.py b/src/module_1/file_6.py
+--- a/src/module_1/file_6.py
++++ b/src/module_1/file_6.py
+@@ -1,3 +1,7 @@
+ def fn_6():
+-    return 38
++    # refactor helper
++    return 38
+diff --git a/src/module_1/file_7.py b/src/module_1/file_7.py
+--- a/src/module_1/file_7.py
++++ b/src/module_1/file_7.py
+@@ -1,3 +1,7 @@
+ def fn_7():
+-    return 38
++    # refactor helper
++    return 39
+",0,synthetic_demo,2025-06-08 03:00:00+00:00,True
+demo/inventory-api,1016,4f4a469fa55f4435201177ba0a410eecd2e2bcbe,de83eed6cb5fb92f98866c81e5f89602a47a1f46,erin,218.0,3,39,3,42.0,"diff --git a/src/module_2/file_0.py b/src/module_2/file_0.py
+--- a/src/module_2/file_0.py
++++ b/src/module_2/file_0.py
+@@ -1,3 +1,16 @@
+ def fn_0():
+-    return 3
++    # FIXME risky null deref
++    return 39
+diff --git a/src/module_2/file_1.py b/src/module_2/file_1.py
+--- a/src/module_2/file_1.py
++++ b/src/module_2/file_1.py
+@@ -1,3 +1,16 @@
+ def fn_1():
+-    return 3
++    # FIXME risky null deref
++    return 40
+diff --git a/src/module_2/file_2.py b/src/module_2/file_2.py
+--- a/src/module_2/file_2.py
++++ b/src/module_2/file_2.py
+@@ -1,3 +1,16 @@
+ def fn_2():
+-    return 3
++    # FIXME risky null deref
++    return 41
+",1,synthetic_demo,2025-06-08 04:00:00+00:00,True
+demo/auth-gateway,1017,077f5f8465d15ef757b92e216edb510c3d9b5cb9,8982af22639598ef9f8f35a26aa24df96a891590,frank,231.0,6,46,8,54.0,"diff --git a/src/module_3/file_0.py b/src/module_3/file_0.py
+--- a/src/module_3/file_0.py
++++ b/src/module_3/file_0.py
+@@ -1,3 +1,10 @@
+ def fn_0():
+-    return 8
++    # refactor helper
++    return 46
+diff --git a/src/module_3/file_1.py b/src/module_3/file_1.py
+--- a/src/module_3/file_1.py
++++ b/src/module_3/file_1.py
+@@ -1,3 +1,10 @@
+ def fn_1():
+-    return 8
++    # refactor helper
++    return 47
+diff --git a/src/module_3/file_2.py b/src/module_3/file_2.py
+--- a/src/module_3/file_2.py
++++ b/src/module_3/file_2.py
+@@ -1,3 +1,10 @@
+ def fn_2():
+-    return 8
++    # refactor helper
++    return 48
+diff --git a/src/module_3/file_3.py b/src/module_3/file_3.py
+--- a/src/module_3/file_3.py
++++ b/src/module_3/file_3.py
+@@ -1,3 +1,10 @@
+ def fn_3():
+-    return 8
++    # refactor helper
++    return 49
+diff --git a/src/module_3/file_4.py b/src/module_3/file_4.py
+--- a/src/module_3/file_4.py
++++ b/src/module_3/file_4.py
+@@ -1,3 +1,10 @@
+ def fn_4():
+-    return 8
++    # refactor helper
++    return 50
+diff --git a/src/module_3/file_5.py b/src/module_3/file_5.py
+--- a/src/module_3/file_5.py
++++ b/src/module_3/file_5.py
+@@ -1,3 +1,10 @@
+ def fn_5():
+-    return 8
++    # refactor helper
++    return 51
+",0,synthetic_demo,2025-06-07 12:00:00+00:00,True
+demo/billing-worker,1018,d727b8f05518b07048485c373ff1b864c900f0c0,922cecc18f5db76c0bae53d824924de775e32eea,alice,244.0,1,53,13,66.0,"diff --git a/src/module_4/file_0.py b/src/module_4/file_0.py
+--- a/src/module_4/file_0.py
++++ b/src/module_4/file_0.py
+@@ -1,3 +1,56 @@
+ def fn_0():
+-    return 13
++    # FIXME risky null deref
++    return 53
+",1,synthetic_demo,2025-06-07 13:00:00+00:00,True
+demo/search-indexer,1019,9175c5c34546262030ee17022bd437466c0f1db6,b4b6e668b51c6eb34677ef524456f32772fbd437,bob,257.0,4,60,18,78.0,"diff --git a/src/module_5/file_0.py b/src/module_5/file_0.py
+--- a/src/module_5/file_0.py
++++ b/src/module_5/file_0.py
+@@ -1,3 +1,18 @@
+ def fn_0():
+-    return 18
++    # refactor helper
++    return 60
+diff --git a/src/module_5/file_1.py b/src/module_5/file_1.py
+--- a/src/module_5/file_1.py
++++ b/src/module_5/file_1.py
+@@ -1,3 +1,18 @@
+ def fn_1():
+-    return 18
++    # refactor helper
++    return 61
+diff --git a/src/module_5/file_2.py b/src/module_5/file_2.py
+--- a/src/module_5/file_2.py
++++ b/src/module_5/file_2.py
+@@ -1,3 +1,18 @@
+ def fn_2():
+-    return 18
++    # refactor helper
++    return 62
+diff --git a/src/module_5/file_3.py b/src/module_5/file_3.py
+--- a/src/module_5/file_3.py
++++ b/src/module_5/file_3.py
+@@ -1,3 +1,18 @@
+ def fn_3():
+-    return 18
++    # refactor helper
++    return 63
+",0,synthetic_demo,2025-06-07 14:00:00+00:00,True
+demo/payments-service,1020,345aae2ab4723128ca92cdbcf8cb025ed02eeee0,40658697b49e8d4dd401b884ff9f865811d6e3a5,carol,270.0,7,67,23,90.0,"diff --git a/src/module_6/file_0.py b/src/module_6/file_0.py
+--- a/src/module_6/file_0.py
++++ b/src/module_6/file_0.py
+@@ -1,3 +1,12 @@
+ def fn_0():
+-    return 23
++    # refactor helper
++    return 67
+diff --git a/src/module_6/file_1.py b/src/module_6/file_1.py
+--- a/src/module_6/file_1.py
++++ b/src/module_6/file_1.py
+@@ -1,3 +1,12 @@
+ def fn_1():
+-    return 23
++    # refactor helper
++    return 68
+diff --git a/src/module_6/file_2.py b/src/module_6/file_2.py
+--- a/src/module_6/file_2.py
++++ b/src/module_6/file_2.py
+@@ -1,3 +1,12 @@
+ def fn_2():
+-    return 23
++    # refactor helper
++    return 69
+diff --git a/src/module_6/file_3.py b/src/module_6/file_3.py
+--- a/src/module_6/file_3.py
++++ b/src/module_6/file_3.py
+@@ -1,3 +1,12 @@
+ def fn_3():
+-    return 23
++    # refactor helper
++    return 70
+diff --git a/src/module_6/file_4.py b/src/module_6/file_4.py
+--- a/src/module_6/file_4.py
++++ b/src/module_6/file_4.py
+@@ -1,3 +1,12 @@
+ def fn_4():
+-    return 23
++    # refactor helper
++    return 71
+diff --git a/src/module_6/file_5.py b/src/module_6/file_5.py
+--- a/src/module_6/file_5.py
++++ b/src/module_6/file_5.py
+@@ -1,3 +1,12 @@
+ def fn_5():
+-    return 23
++    # refactor helper
++    return 72
+diff --git a/src/module_6/file_6.py b/src/module_6/file_6.py
+--- a/src/module_6/file_6.py
++++ b/src/module_6/file_6.py
+@@ -1,3 +1,12 @@
+ def fn_6():
+-    return 23
++    # refactor helper
++    return 73
+",0,synthetic_demo,2025-06-09 15:00:00+00:00,True
+demo/inventory-api,1021,bccbffbd93e737d979d0477cf93f242e97543ba5,c3bfd5ed052c1a17ebfcc886839246e3a640c1d8,dave,283.0,2,74,28,102.0,"diff --git a/src/module_0/file_0.py b/src/module_0/file_0.py
+--- a/src/module_0/file_0.py
++++ b/src/module_0/file_0.py
+@@ -1,3 +1,40 @@
+ def fn_0():
+-    return 28
++    # FIXME risky null deref
++    return 74
+diff --git a/src/module_0/file_1.py b/src/module_0/file_1.py
+--- a/src/module_0/file_1.py
++++ b/src/module_0/file_1.py
+@@ -1,3 +1,40 @@
+ def fn_1():
+-    return 28
++    # FIXME risky null deref
++    return 75
+",1,synthetic_demo,2025-06-09 16:00:00+00:00,True
+demo/auth-gateway,1022,4c9fb1a8bc9c9ec792f9e7d74f730810c5d5d518,4678acd26bd4e1c8ebc0a71f93ee7f2972469866,erin,296.0,5,81,33,114.0,"diff --git a/src/module_1/file_0.py b/src/module_1/file_0.py
+--- a/src/module_1/file_0.py
++++ b/src/module_1/file_0.py
+@@ -1,3 +1,19 @@
+ def fn_0():
+-    return 33
++    # FIXME risky null deref
++    return 81
+diff --git a/src/module_1/file_1.py b/src/module_1/file_1.py
+--- a/src/module_1/file_1.py
++++ b/src/module_1/file_1.py
+@@ -1,3 +1,19 @@
+ def fn_1():
+-    return 33
++    # FIXME risky null deref
++    return 82
+diff --git a/src/module_1/file_2.py b/src/module_1/file_2.py
+--- a/src/module_1/file_2.py
++++ b/src/module_1/file_2.py
+@@ -1,3 +1,19 @@
+ def fn_2():
+-    return 33
++    # FIXME risky null deref
++    return 83
+diff --git a/src/module_1/file_3.py b/src/module_1/file_3.py
+--- a/src/module_1/file_3.py
++++ b/src/module_1/file_3.py
+@@ -1,3 +1,19 @@
+ def fn_3():
+-    return 33
++    # FIXME risky null deref
++    return 84
+diff --git a/src/module_1/file_4.py b/src/module_1/file_4.py
+--- a/src/module_1/file_4.py
++++ b/src/module_1/file_4.py
+@@ -1,3 +1,19 @@
+ def fn_4():
+-    return 33
++    # FIXME risky null deref
++    return 85
+",1,synthetic_demo,2025-06-09 17:00:00+00:00,True
+demo/billing-worker,1023,b88adaec15f3d431279a049d4127f71a55e92c64,2dcf1fa817fefce2c69cc307c7598b33fef86332,frank,309.0,8,88,38,126.0,"diff --git a/src/module_2/file_0.py b/src/module_2/file_0.py
+--- a/src/module_2/file_0.py
++++ b/src/module_2/file_0.py
+@@ -1,3 +1,14 @@
+ def fn_0():
+-    return 38
++    # refactor helper
++    return 88
+diff --git a/src/module_2/file_1.py b/src/module_2/file_1.py
+--- a/src/module_2/file_1.py
++++ b/src/module_2/file_1.py
+@@ -1,3 +1,14 @@
+ def fn_1():
+-    return 38
++    # refactor helper
++    return 89
+diff --git a/src/module_2/file_2.py b/src/module_2/file_2.py
+--- a/src/module_2/file_2.py
++++ b/src/module_2/file_2.py
+@@ -1,3 +1,14 @@
+ def fn_2():
+-    return 38
++    # refactor helper
++    return 90
+diff --git a/src/module_2/file_3.py b/src/module_2/file_3.py
+--- a/src/module_2/file_3.py
++++ b/src/module_2/file_3.py
+@@ -1,3 +1,14 @@
+ def fn_3():
+-    return 38
++    # refactor helper
++    return 91
+diff --git a/src/module_2/file_4.py b/src/module_2/file_4.py
+--- a/src/module_2/file_4.py
++++ b/src/module_2/file_4.py
+@@ -1,3 +1,14 @@
+ def fn_4():
+-    return 38
++    # refactor helper
++    return 92
+diff --git a/src/module_2/file_5.py b/src/module_2/file_5.py
+--- a/src/module_2/file_5.py
++++ b/src/module_2/file_5.py
+@@ -1,3 +1,14 @@
+ def fn_5():
+-    return 38
++    # refactor helper
++    return 93
+diff --git a/src/module_2/file_6.py b/src/module_2/file_6.py
+--- a/src/module_2/file_6.py
++++ b/src/module_2/file_6.py
+@@ -1,3 +1,14 @@
+ def fn_6():
+-    return 38
++    # refactor helper
++    return 94
+diff --git a/src/module_2/file_7.py b/src/module_2/file_7.py
+--- a/src/module_2/file_7.py
++++ b/src/module_2/file_7.py
+@@ -1,3 +1,14 @@
+ def fn_7():
+-    return 38
++    # refactor helper
++    return 95
+",0,synthetic_demo,2025-06-09 18:00:00+00:00,True
+demo/search-indexer,1024,f0748857f052be8a3cecb1675eabdd3421ef0630,0d4a4eef098d17b2d6b0d97fd8fdc6079b7d9cf0,alice,322.0,3,95,3,98.0,"diff --git a/src/module_3/file_0.py b/src/module_3/file_0.py
+--- a/src/module_3/file_0.py
++++ b/src/module_3/file_0.py
+@@ -1,3 +1,34 @@
+ def fn_0():
+-    return 3
++    # refactor helper
++    return 95
+diff --git a/src/module_3/file_1.py b/src/module_3/file_1.py
+--- a/src/module_3/file_1.py
++++ b/src/module_3/file_1.py
+@@ -1,3 +1,34 @@
+ def fn_1():
+-    return 3
++    # refactor helper
++    return 96
+diff --git a/src/module_3/file_2.py b/src/module_3/file_2.py
+--- a/src/module_3/file_2.py
++++ b/src/module_3/file_2.py
+@@ -1,3 +1,34 @@
+ def fn_2():
+-    return 3
++    # refactor helper
++    return 97
+",0,synthetic_demo,2025-06-09 19:00:00+00:00,True
+demo/payments-service,1025,ab051a637da0a070c46b9f08cd38248e40eb1676,1d303fc3549e5867b9e2de4b302a719e9bcc5058,bob,335.0,6,102,8,110.0,"diff --git a/src/module_4/file_0.py b/src/module_4/file_0.py
+--- a/src/module_4/file_0.py
++++ b/src/module_4/file_0.py
+@@ -1,3 +1,20 @@
+ def fn_0():
+-    return 8
++    # refactor helper
++    return 102
+diff --git a/src/module_4/file_1.py b/src/module_4/file_1.py
+--- a/src/module_4/file_1.py
++++ b/src/module_4/file_1.py
+@@ -1,3 +1,20 @@
+ def fn_1():
+-    return 8
++    # refactor helper
++    return 103
+diff --git a/src/module_4/file_2.py b/src/module_4/file_2.py
+--- a/src/module_4/file_2.py
++++ b/src/module_4/file_2.py
+@@ -1,3 +1,20 @@
+ def fn_2():
+-    return 8
++    # refactor helper
++    return 104
+diff --git a/src/module_4/file_3.py b/src/module_4/file_3.py
+--- a/src/module_4/file_3.py
++++ b/src/module_4/file_3.py
+@@ -1,3 +1,20 @@
+ def fn_3():
+-    return 8
++    # refactor helper
++    return 105
+diff --git a/src/module_4/file_4.py b/src/module_4/file_4.py
+--- a/src/module_4/file_4.py
++++ b/src/module_4/file_4.py
+@@ -1,3 +1,20 @@
+ def fn_4():
+-    return 8
++    # refactor helper
++    return 106
+diff --git a/src/module_4/file_5.py b/src/module_4/file_5.py
+--- a/src/module_4/file_5.py
++++ b/src/module_4/file_5.py
+@@ -1,3 +1,20 @@
+ def fn_5():
+-    return 8
++    # refactor helper
++    return 107
+",0,synthetic_demo,2025-06-11 20:00:00+00:00,True
+demo/inventory-api,1026,902982292421c8e6b792fdcbed6d1fac4c1bf1f9,a4e397fb2c12e1831c29902750ff76fc3596414e,carol,348.0,1,109,13,122.0,"diff --git a/src/module_5/file_0.py b/src/module_5/file_0.py
+--- a/src/module_5/file_0.py
++++ b/src/module_5/file_0.py
+@@ -1,3 +1,112 @@
+ def fn_0():
+-    return 13
++    # refactor helper
++    return 109
+",0,synthetic_demo,2025-06-11 21:00:00+00:00,True
+demo/auth-gateway,1027,ba448c1e564b03ffc1aeac5c621d15c690913437,b4838b7ed2338a2d2849426d4e24fe1a463f65af,dave,361.0,4,116,18,134.0,"diff --git a/src/module_6/file_0.py b/src/module_6/file_0.py
+--- a/src/module_6/file_0.py
++++ b/src/module_6/file_0.py
+@@ -1,3 +1,32 @@
+ def fn_0():
+-    return 18
++    # refactor helper
++    return 116
+diff --git a/src/module_6/file_1.py b/src/module_6/file_1.py
+--- a/src/module_6/file_1.py
++++ b/src/module_6/file_1.py
+@@ -1,3 +1,32 @@
+ def fn_1():
+-    return 18
++    # refactor helper
++    return 117
+diff --git a/src/module_6/file_2.py b/src/module_6/file_2.py
+--- a/src/module_6/file_2.py
++++ b/src/module_6/file_2.py
+@@ -1,3 +1,32 @@
+ def fn_2():
+-    return 18
++    # refactor helper
++    return 118
+diff --git a/src/module_6/file_3.py b/src/module_6/file_3.py
+--- a/src/module_6/file_3.py
++++ b/src/module_6/file_3.py
+@@ -1,3 +1,32 @@
+ def fn_3():
+-    return 18
++    # refactor helper
++    return 119
+",0,synthetic_demo,2025-06-11 22:00:00+00:00,True
+demo/billing-worker,1028,6c958765086fa52528a0b3532b92dfcdf90f9049,f769eafd7685b5f0424cf64ec5e19eda5ea1f7b9,erin,374.0,7,123,23,146.0,"diff --git a/src/module_0/file_0.py b/src/module_0/file_0.py
+--- a/src/module_0/file_0.py
++++ b/src/module_0/file_0.py
+@@ -1,3 +1,20 @@
+ def fn_0():
+-    return 23
++    # FIXME risky null deref
++    return 123
+diff --git a/src/module_0/file_1.py b/src/module_0/file_1.py
+--- a/src/module_0/file_1.py
++++ b/src/module_0/file_1.py
+@@ -1,3 +1,20 @@
+ def fn_1():
+-    return 23
++    # FIXME risky null deref
++    return 124
+diff --git a/src/module_0/file_2.py b/src/module_0/file_2.py
+--- a/src/module_0/file_2.py
++++ b/src/module_0/file_2.py
+@@ -1,3 +1,20 @@
+ def fn_2():
+-    return 23
++    # FIXME risky null deref
++    return 125
+diff --git a/src/module_0/file_3.py b/src/module_0/file_3.py
+--- a/src/module_0/file_3.py
++++ b/src/module_0/file_3.py
+@@ -1,3 +1,20 @@
+ def fn_3():
+-    return 23
++    # FIXME risky null deref
++    return 126
+diff --git a/src/module_0/file_4.py b/src/module_0/file_4.py
+--- a/src/module_0/file_4.py
++++ b/src/module_0/file_4.py
+@@ -1,3 +1,20 @@
+ def fn_4():
+-    return 23
++    # FIXME risky null deref
++    return 127
+diff --git a/src/module_0/file_5.py b/src/module_0/file_5.py
+--- a/src/module_0/file_5.py
++++ b/src/module_0/file_5.py
+@@ -1,3 +1,20 @@
+ def fn_5():
+-    return 23
++    # FIXME risky null deref
++    return 128
+diff --git a/src/module_0/file_6.py b/src/module_0/file_6.py
+--- a/src/module_0/file_6.py
++++ b/src/module_0/file_6.py
+@@ -1,3 +1,20 @@
+ def fn_6():
+-    return 23
++    # FIXME risky null deref
++    return 129
+",1,synthetic_demo,2025-06-11 23:00:00+00:00,True
+demo/search-indexer,1029,e9daec29c5c131c21d977cc9a7e55172645d2d77,970934822a117a06055ef6cd180a093d62bed6bb,frank,387.0,2,10,28,38.0,"diff --git a/src/module_1/file_0.py b/src/module_1/file_0.py
+--- a/src/module_1/file_0.py
++++ b/src/module_1/file_0.py
+@@ -1,3 +1,8 @@
+ def fn_0():
+-    return 28
++    # refactor helper
++    return 10
+diff --git a/src/module_1/file_1.py b/src/module_1/file_1.py
+--- a/src/module_1/file_1.py
++++ b/src/module_1/file_1.py
+@@ -1,3 +1,8 @@
+ def fn_1():
+-    return 28
++    # refactor helper
++    return 11
+",0,synthetic_demo,2025-06-12 00:00:00+00:00,True
+demo/payments-service,1030,c7d4c12ddea08172da8b23a101a628a10699624a,4825a9f8fa26e964723cec5d3dab90bc3a108882,alice,400.0,5,17,33,50.0,"diff --git a/src/module_2/file_0.py b/src/module_2/file_0.py
+--- a/src/module_2/file_0.py
++++ b/src/module_2/file_0.py
+@@ -1,3 +1,6 @@
+ def fn_0():
+-    return 33
++    # FIXME risky null deref
++    return 17
+diff --git a/src/module_2/file_1.py b/src/module_2/file_1.py
+--- a/src/module_2/file_1.py
++++ b/src/module_2/file_1.py
+@@ -1,3 +1,6 @@
+ def fn_1():
+-    return 33
++    # FIXME risky null deref
++    return 18
+diff --git a/src/module_2/file_2.py b/src/module_2/file_2.py
+--- a/src/module_2/file_2.py
++++ b/src/module_2/file_2.py
+@@ -1,3 +1,6 @@
+ def fn_2():
+-    return 33
++    # FIXME risky null deref
++    return 19
+diff --git a/src/module_2/file_3.py b/src/module_2/file_3.py
+--- a/src/module_2/file_3.py
++++ b/src/module_2/file_3.py
+@@ -1,3 +1,6 @@
+ def fn_3():
+-    return 33
++    # FIXME risky null deref
++    return 20
+diff --git a/src/module_2/file_4.py b/src/module_2/file_4.py
+--- a/src/module_2/file_4.py
++++ b/src/module_2/file_4.py
+@@ -1,3 +1,6 @@
+ def fn_4():
+-    return 33
++    # FIXME risky null deref
++    return 21
+",1,synthetic_demo,2025-06-14 01:00:00+00:00,True
+demo/inventory-api,1031,a960fda39136aad7a22ed4dd1a5a60b9057aa2f3,5311fb6b27f9d864dccc4efcf58d7403ef45bab4,bob,413.0,8,24,38,62.0,"diff --git a/src/module_3/file_0.py b/src/module_3/file_0.py
+--- a/src/module_3/file_0.py
++++ b/src/module_3/file_0.py
+@@ -1,3 +1,6 @@
+ def fn_0():
+-    return 38
++    # refactor helper
++    return 24
+diff --git a/src/module_3/file_1.py b/src/module_3/file_1.py
+--- a/src/module_3/file_1.py
++++ b/src/module_3/file_1.py
+@@ -1,3 +1,6 @@
+ def fn_1():
+-    return 38
++    # refactor helper
++    return 25
+diff --git a/src/module_3/file_2.py b/src/module_3/file_2.py
+--- a/src/module_3/file_2.py
++++ b/src/module_3/file_2.py
+@@ -1,3 +1,6 @@
+ def fn_2():
+-    return 38
++    # refactor helper
++    return 26
+diff --git a/src/module_3/file_3.py b/src/module_3/file_3.py
+--- a/src/module_3/file_3.py
++++ b/src/module_3/file_3.py
+@@ -1,3 +1,6 @@
+ def fn_3():
+-    return 38
++    # refactor helper
++    return 27
+diff --git a/src/module_3/file_4.py b/src/module_3/file_4.py
+--- a/src/module_3/file_4.py
++++ b/src/module_3/file_4.py
+@@ -1,3 +1,6 @@
+ def fn_4():
+-    return 38
++    # refactor helper
++    return 28
+diff --git a/src/module_3/file_5.py b/src/module_3/file_5.py
+--- a/src/module_3/file_5.py
++++ b/src/module_3/file_5.py
+@@ -1,3 +1,6 @@
+ def fn_5():
+-    return 38
++    # refactor helper
++    return 29
+diff --git a/src/module_3/file_6.py b/src/module_3/file_6.py
+--- a/src/module_3/file_6.py
++++ b/src/module_3/file_6.py
+@@ -1,3 +1,6 @@
+ def fn_6():
+-    return 38
++    # refactor helper
++    return 30
+diff --git a/src/module_3/file_7.py b/src/module_3/file_7.py
+--- a/src/module_3/file_7.py
++++ b/src/module_3/file_7.py
+@@ -1,3 +1,6 @@
+ def fn_7():
+-    return 38
++    # refactor helper
++    return 31
+",0,synthetic_demo,2025-06-14 02:00:00+00:00,True
+demo/auth-gateway,1032,e253d67e4f28c6f0031888ce2c51503992fb7d95,bc9061e52f349b3f0fed6ba54015cd9bb2f1159f,carol,426.0,3,31,3,34.0,"diff --git a/src/module_4/file_0.py b/src/module_4/file_0.py
+--- a/src/module_4/file_0.py
++++ b/src/module_4/file_0.py
+@@ -1,3 +1,13 @@
+ def fn_0():
+-    return 3
++    # refactor helper
++    return 31
+diff --git a/src/module_4/file_1.py b/src/module_4/file_1.py
+--- a/src/module_4/file_1.py
++++ b/src/module_4/file_1.py
+@@ -1,3 +1,13 @@
+ def fn_1():
+-    return 3
++    # refactor helper
++    return 32
+diff --git a/src/module_4/file_2.py b/src/module_4/file_2.py
+--- a/src/module_4/file_2.py
++++ b/src/module_4/file_2.py
+@@ -1,3 +1,13 @@
+ def fn_2():
+-    return 3
++    # refactor helper
++    return 33
+",0,synthetic_demo,2025-06-14 03:00:00+00:00,True
+demo/billing-worker,1033,ef4b0e4a063063e9008495a89acbf47ef930d892,f2cdb34c43845063545dd8ed66d7b83bc39e9448,dave,439.0,6,38,8,46.0,"diff --git a/src/module_5/file_0.py b/src/module_5/file_0.py
+--- a/src/module_5/file_0.py
++++ b/src/module_5/file_0.py
+@@ -1,3 +1,9 @@
+ def fn_0():
+-    return 8
++    # refactor helper
++    return 38
+diff --git a/src/module_5/file_1.py b/src/module_5/file_1.py
+--- a/src/module_5/file_1.py
++++ b/src/module_5/file_1.py
+@@ -1,3 +1,9 @@
+ def fn_1():
+-    return 8
++    # refactor helper
++    return 39
+diff --git a/src/module_5/file_2.py b/src/module_5/file_2.py
+--- a/src/module_5/file_2.py
++++ b/src/module_5/file_2.py
+@@ -1,3 +1,9 @@
+ def fn_2():
+-    return 8
++    # refactor helper
++    return 40
+diff --git a/src/module_5/file_3.py b/src/module_5/file_3.py
+--- a/src/module_5/file_3.py
++++ b/src/module_5/file_3.py
+@@ -1,3 +1,9 @@
+ def fn_3():
+-    return 8
++    # refactor helper
++    return 41
+diff --git a/src/module_5/file_4.py b/src/module_5/file_4.py
+--- a/src/module_5/file_4.py
++++ b/src/module_5/file_4.py
+@@ -1,3 +1,9 @@
+ def fn_4():
+-    return 8
++    # refactor helper
++    return 42
+diff --git a/src/module_5/file_5.py b/src/module_5/file_5.py
+--- a/src/module_5/file_5.py
++++ b/src/module_5/file_5.py
+@@ -1,3 +1,9 @@
+ def fn_5():
+-    return 8
++    # refactor helper
++    return 43
+",0,synthetic_demo,2025-06-14 04:00:00+00:00,True
+demo/search-indexer,1034,1f79ad02ad5d32d6aa11df11d658a54014221d9b,98847f5b5cbe8203a0610e544f8166184b9ebf1e,erin,452.0,1,45,13,58.0,"diff --git a/src/module_6/file_0.py b/src/module_6/file_0.py
+--- a/src/module_6/file_0.py
++++ b/src/module_6/file_0.py
+@@ -1,3 +1,48 @@
+ def fn_0():
+-    return 13
++    # FIXME risky null deref
++    return 45
+",1,synthetic_demo,2025-06-13 12:00:00+00:00,True
+demo/payments-service,1035,f8597b38ff1ee609c1f1f8bfb2e8eaf923956a78,7b95918fe453222bc522f7ee828e41ae35194b9d,frank,465.0,4,52,18,70.0,"diff --git a/src/module_0/file_0.py b/src/module_0/file_0.py
+--- a/src/module_0/file_0.py
++++ b/src/module_0/file_0.py
+@@ -1,3 +1,16 @@
+ def fn_0():
+-    return 18
++    # refactor helper
++    return 52
+diff --git a/src/module_0/file_1.py b/src/module_0/file_1.py
+--- a/src/module_0/file_1.py
++++ b/src/module_0/file_1.py
+@@ -1,3 +1,16 @@
+ def fn_1():
+-    return 18
++    # refactor helper
++    return 53
+diff --git a/src/module_0/file_2.py b/src/module_0/file_2.py
+--- a/src/module_0/file_2.py
++++ b/src/module_0/file_2.py
+@@ -1,3 +1,16 @@
+ def fn_2():
+-    return 18
++    # refactor helper
++    return 54
+diff --git a/src/module_0/file_3.py b/src/module_0/file_3.py
+--- a/src/module_0/file_3.py
++++ b/src/module_0/file_3.py
+@@ -1,3 +1,16 @@
+ def fn_3():
+-    return 18
++    # refactor helper
++    return 55
+",0,synthetic_demo,2025-06-15 13:00:00+00:00,True
+demo/inventory-api,1036,5866684d1bae0cdf1799ba43f8fe395c71d46b21,ac7be3ec53af0f2b956093da6a6d67b820efada8,alice,478.0,7,59,23,82.0,"diff --git a/src/module_1/file_0.py b/src/module_1/file_0.py
+--- a/src/module_1/file_0.py
++++ b/src/module_1/file_0.py
+@@ -1,3 +1,11 @@
+ def fn_0():
+-    return 23
++    # FIXME risky null deref
++    return 59
+diff --git a/src/module_1/file_1.py b/src/module_1/file_1.py
+--- a/src/module_1/file_1.py
++++ b/src/module_1/file_1.py
+@@ -1,3 +1,11 @@
+ def fn_1():
+-    return 23
++    # FIXME risky null deref
++    return 60
+diff --git a/src/module_1/file_2.py b/src/module_1/file_2.py
+--- a/src/module_1/file_2.py
++++ b/src/module_1/file_2.py
+@@ -1,3 +1,11 @@
+ def fn_2():
+-    return 23
++    # FIXME risky null deref
++    return 61
+diff --git a/src/module_1/file_3.py b/src/module_1/file_3.py
+--- a/src/module_1/file_3.py
++++ b/src/module_1/file_3.py
+@@ -1,3 +1,11 @@
+ def fn_3():
+-    return 23
++    # FIXME risky null deref
++    return 62
+diff --git a/src/module_1/file_4.py b/src/module_1/file_4.py
+--- a/src/module_1/file_4.py
++++ b/src/module_1/file_4.py
+@@ -1,3 +1,11 @@
+ def fn_4():
+-    return 23
++    # FIXME risky null deref
++    return 63
+diff --git a/src/module_1/file_5.py b/src/module_1/file_5.py
+--- a/src/module_1/file_5.py
++++ b/src/module_1/file_5.py
+@@ -1,3 +1,11 @@
+ def fn_5():
+-    return 23
++    # FIXME risky null deref
++    return 64
+diff --git a/src/module_1/file_6.py b/src/module_1/file_6.py
+--- a/src/module_1/file_6.py
++++ b/src/module_1/file_6.py
+@@ -1,3 +1,11 @@
+ def fn_6():
+-    return 23
++    # FIXME risky null deref
++    return 65
+",1,synthetic_demo,2025-06-15 14:00:00+00:00,True
+demo/auth-gateway,1037,ea3bd4b311f10f41909cc90ab8dc4ce797bf52f5,39220cf4797fddf6edce7d3b01818f4d01d90996,bob,491.0,2,66,28,94.0,"diff --git a/src/module_2/file_0.py b/src/module_2/file_0.py
+--- a/src/module_2/file_0.py
++++ b/src/module_2/file_0.py
+@@ -1,3 +1,36 @@
+ def fn_0():
+-    return 28
++    # FIXME risky null deref
++    return 66
+diff --git a/src/module_2/file_1.py b/src/module_2/file_1.py
+--- a/src/module_2/file_1.py
++++ b/src/module_2/file_1.py
+@@ -1,3 +1,36 @@
+ def fn_1():
+-    return 28
++    # FIXME risky null deref
++    return 67
+",1,synthetic_demo,2025-06-15 15:00:00+00:00,True
+demo/billing-worker,1038,bc5b9ac51b78833df81e412af11baaf6f8505a14,8ce2ce8cf343dcd4ff3e8b665d6a00b4c60eb83f,carol,504.0,5,73,33,106.0,"diff --git a/src/module_3/file_0.py b/src/module_3/file_0.py
+--- a/src/module_3/file_0.py
++++ b/src/module_3/file_0.py
+@@ -1,3 +1,17 @@
+ def fn_0():
+-    return 33
++    # FIXME risky null deref
++    return 73
+diff --git a/src/module_3/file_1.py b/src/module_3/file_1.py
+--- a/src/module_3/file_1.py
++++ b/src/module_3/file_1.py
+@@ -1,3 +1,17 @@
+ def fn_1():
+-    return 33
++    # FIXME risky null deref
++    return 74
+diff --git a/src/module_3/file_2.py b/src/module_3/file_2.py
+--- a/src/module_3/file_2.py
++++ b/src/module_3/file_2.py
+@@ -1,3 +1,17 @@
+ def fn_2():
+-    return 33
++    # FIXME risky null deref
++    return 75
+diff --git a/src/module_3/file_3.py b/src/module_3/file_3.py
+--- a/src/module_3/file_3.py
++++ b/src/module_3/file_3.py
+@@ -1,3 +1,17 @@
+ def fn_3():
+-    return 33
++    # FIXME risky null deref
++    return 76
+diff --git a/src/module_3/file_4.py b/src/module_3/file_4.py
+--- a/src/module_3/file_4.py
++++ b/src/module_3/file_4.py
+@@ -1,3 +1,17 @@
+ def fn_4():
+-    return 33
++    # FIXME risky null deref
++    return 77
+",1,synthetic_demo,2025-06-15 16:00:00+00:00,True
+demo/search-indexer,1039,2402105e41feb20ca0d15d6962c440700fe8062c,741b49b0a239ff78e0615ef847ac273c4fa5cf64,dave,517.0,8,80,38,118.0,"diff --git a/src/module_4/file_0.py b/src/module_4/file_0.py
+--- a/src/module_4/file_0.py
++++ b/src/module_4/file_0.py
+@@ -1,3 +1,13 @@
+ def fn_0():
+-    return 38
++    # refactor helper
++    return 80
+diff --git a/src/module_4/file_1.py b/src/module_4/file_1.py
+--- a/src/module_4/file_1.py
++++ b/src/module_4/file_1.py
+@@ -1,3 +1,13 @@
+ def fn_1():
+-    return 38
++    # refactor helper
++    return 81
+diff --git a/src/module_4/file_2.py b/src/module_4/file_2.py
+--- a/src/module_4/file_2.py
++++ b/src/module_4/file_2.py
+@@ -1,3 +1,13 @@
+ def fn_2():
+-    return 38
++    # refactor helper
++    return 82
+diff --git a/src/module_4/file_3.py b/src/module_4/file_3.py
+--- a/src/module_4/file_3.py
++++ b/src/module_4/file_3.py
+@@ -1,3 +1,13 @@
+ def fn_3():
+-    return 38
++    # refactor helper
++    return 83
+diff --git a/src/module_4/file_4.py b/src/module_4/file_4.py
+--- a/src/module_4/file_4.py
++++ b/src/module_4/file_4.py
+@@ -1,3 +1,13 @@
+ def fn_4():
+-    return 38
++    # refactor helper
++    return 84
+diff --git a/src/module_4/file_5.py b/src/module_4/file_5.py
+--- a/src/module_4/file_5.py
++++ b/src/module_4/file_5.py
+@@ -1,3 +1,13 @@
+ def fn_5():
+-    return 38
++    # refactor helper
++    return 85
+diff --git a/src/module_4/file_6.py b/src/module_4/file_6.py
+--- a/src/module_4/file_6.py
++++ b/src/module_4/file_6.py
+@@ -1,3 +1,13 @@
+ def fn_6():
+-    return 38
++    # refactor helper
++    return 86
+diff --git a/src/module_4/file_7.py b/src/module_4/file_7.py
+--- a/src/module_4/file_7.py
++++ b/src/module_4/file_7.py
+@@ -1,3 +1,13 @@
+ def fn_7():
+-    return 38
++    # refactor helper
++    return 87
+",0,synthetic_demo,2025-06-15 17:00:00+00:00,True
+demo/payments-service,1040,f46d8ef5626b9d427c0042b8cfe861cb6fc0b3c8,706e72ae3038a4a8eb656bbc031b00c4a5ff4c07,erin,530.0,3,87,3,90.0,"diff --git a/src/module_5/file_0.py b/src/module_5/file_0.py
+--- a/src/module_5/file_0.py
++++ b/src/module_5/file_0.py
+@@ -1,3 +1,32 @@
+ def fn_0():
+-    return 3
++    # refactor helper
++    return 87
+diff --git a/src/module_5/file_1.py b/src/module_5/file_1.py
+--- a/src/module_5/file_1.py
++++ b/src/module_5/file_1.py
+@@ -1,3 +1,32 @@
+ def fn_1():
+-    return 3
++    # refactor helper
++    return 88
+diff --git a/src/module_5/file_2.py b/src/module_5/file_2.py
+--- a/src/module_5/file_2.py
++++ b/src/module_5/file_2.py
+@@ -1,3 +1,32 @@
+ def fn_2():
+-    return 3
++    # refactor helper
++    return 89
+",0,synthetic_demo,2025-06-17 18:00:00+00:00,True
+demo/inventory-api,1041,35e0df2dbf47452e6e67bb0bee10e33df8e9cdb9,a9b018ba8110c0086ce43226542aa54401e50d8c,frank,543.0,6,94,8,102.0,"diff --git a/src/module_6/file_0.py b/src/module_6/file_0.py
+--- a/src/module_6/file_0.py
++++ b/src/module_6/file_0.py
+@@ -1,3 +1,18 @@
+ def fn_0():
+-    return 8
++    # refactor helper
++    return 94
+diff --git a/src/module_6/file_1.py b/src/module_6/file_1.py
+--- a/src/module_6/file_1.py
++++ b/src/module_6/file_1.py
+@@ -1,3 +1,18 @@
+ def fn_1():
+-    return 8
++    # refactor helper
++    return 95
+diff --git a/src/module_6/file_2.py b/src/module_6/file_2.py
+--- a/src/module_6/file_2.py
++++ b/src/module_6/file_2.py
+@@ -1,3 +1,18 @@
+ def fn_2():
+-    return 8
++    # refactor helper
++    return 96
+diff --git a/src/module_6/file_3.py b/src/module_6/file_3.py
+--- a/src/module_6/file_3.py
++++ b/src/module_6/file_3.py
+@@ -1,3 +1,18 @@
+ def fn_3():
+-    return 8
++    # refactor helper
++    return 97
+diff --git a/src/module_6/file_4.py b/src/module_6/file_4.py
+--- a/src/module_6/file_4.py
++++ b/src/module_6/file_4.py
+@@ -1,3 +1,18 @@
+ def fn_4():
+-    return 8
++    # refactor helper
++    return 98
+diff --git a/src/module_6/file_5.py b/src/module_6/file_5.py
+--- a/src/module_6/file_5.py
++++ b/src/module_6/file_5.py
+@@ -1,3 +1,18 @@
+ def fn_5():
+-    return 8
++    # refactor helper
++    return 99
+",0,synthetic_demo,2025-06-17 19:00:00+00:00,True
+demo/auth-gateway,1042,c11683b4f7db084e666b61bc14e3baf2adfe7e8e,8da9a57ccda9e802fdff6802868b5ee02123feff,alice,556.0,1,101,13,114.0,"diff --git a/src/module_0/file_0.py b/src/module_0/file_0.py
+--- a/src/module_0/file_0.py
++++ b/src/module_0/file_0.py
+@@ -1,3 +1,104 @@
+ def fn_0():
+-    return 13
++    # FIXME risky null deref
++    return 101
+",1,synthetic_demo,2025-06-17 20:00:00+00:00,True
+demo/billing-worker,1043,2e0c267edf984b034498f3045b94e28548e568fd,e2c83a01d93fd60811c16e96335dc240ff8f39b7,bob,569.0,4,108,18,126.0,"diff --git a/src/module_1/file_0.py b/src/module_1/file_0.py
+--- a/src/module_1/file_0.py
++++ b/src/module_1/file_0.py
+@@ -1,3 +1,30 @@
+ def fn_0():
+-    return 18
++    # refactor helper
++    return 108
+diff --git a/src/module_1/file_1.py b/src/module_1/file_1.py
+--- a/src/module_1/file_1.py
++++ b/src/module_1/file_1.py
+@@ -1,3 +1,30 @@
+ def fn_1():
+-    return 18
++    # refactor helper
++    return 109
+diff --git a/src/module_1/file_2.py b/src/module_1/file_2.py
+--- a/src/module_1/file_2.py
++++ b/src/module_1/file_2.py
+@@ -1,3 +1,30 @@
+ def fn_2():
+-    return 18
++    # refactor helper
++    return 110
+diff --git a/src/module_1/file_3.py b/src/module_1/file_3.py
+--- a/src/module_1/file_3.py
++++ b/src/module_1/file_3.py
+@@ -1,3 +1,30 @@
+ def fn_3():
+-    return 18
++    # refactor helper
++    return 111
+",0,synthetic_demo,2025-06-17 21:00:00+00:00,True
+demo/search-indexer,1044,4f4b89ff352b594e00a0a08d2372aad12e3a8f2e,22db09bff5d2ae07ad2feaeb9f5e8742a1ade0c0,carol,582.0,7,115,23,138.0,"diff --git a/src/module_2/file_0.py b/src/module_2/file_0.py
+--- a/src/module_2/file_0.py
++++ b/src/module_2/file_0.py
+@@ -1,3 +1,19 @@
+ def fn_0():
+-    return 23
++    # FIXME risky null deref
++    return 115
+diff --git a/src/module_2/file_1.py b/src/module_2/file_1.py
+--- a/src/module_2/file_1.py
++++ b/src/module_2/file_1.py
+@@ -1,3 +1,19 @@
+ def fn_1():
+-    return 23
++    # FIXME risky null deref
++    return 116
+diff --git a/src/module_2/file_2.py b/src/module_2/file_2.py
+--- a/src/module_2/file_2.py
++++ b/src/module_2/file_2.py
+@@ -1,3 +1,19 @@
+ def fn_2():
+-    return 23
++    # FIXME risky null deref
++    return 117
+diff --git a/src/module_2/file_3.py b/src/module_2/file_3.py
+--- a/src/module_2/file_3.py
++++ b/src/module_2/file_3.py
+@@ -1,3 +1,19 @@
+ def fn_3():
+-    return 23
++    # FIXME risky null deref
++    return 118
+diff --git a/src/module_2/file_4.py b/src/module_2/file_4.py
+--- a/src/module_2/file_4.py
++++ b/src/module_2/file_4.py
+@@ -1,3 +1,19 @@
+ def fn_4():
+-    return 23
++    # FIXME risky null deref
++    return 119
+diff --git a/src/module_2/file_5.py b/src/module_2/file_5.py
+--- a/src/module_2/file_5.py
++++ b/src/module_2/file_5.py
+@@ -1,3 +1,19 @@
+ def fn_5():
+-    return 23
++    # FIXME risky null deref
++    return 120
+diff --git a/src/module_2/file_6.py b/src/module_2/file_6.py
+--- a/src/module_2/file_6.py
++++ b/src/module_2/file_6.py
+@@ -1,3 +1,19 @@
+ def fn_6():
+-    return 23
++    # FIXME risky null deref
++    return 121
+",1,synthetic_demo,2025-06-17 22:00:00+00:00,True
+demo/payments-service,1045,6235850be458d5b41a0f222e68bcbbca60e0fecd,554c0fd156dc194bbacaa793a0b856c77cbf1d18,dave,595.0,2,122,28,150.0,"diff --git a/src/module_3/file_0.py b/src/module_3/file_0.py
+--- a/src/module_3/file_0.py
++++ b/src/module_3/file_0.py
+@@ -1,3 +1,64 @@
+ def fn_0():
+-    return 28
++    # FIXME risky null deref
++    return 122
+diff --git a/src/module_3/file_1.py b/src/module_3/file_1.py
+--- a/src/module_3/file_1.py
++++ b/src/module_3/file_1.py
+@@ -1,3 +1,64 @@
+ def fn_1():
+-    return 28
++    # FIXME risky null deref
++    return 123
+",1,synthetic_demo,2025-06-19 23:00:00+00:00,True
+demo/inventory-api,1046,61cb6a947b27dec59e2d3f1480797af1397a90fb,cd0488f2dfb188bb329d3838552bd68ab5ea3455,erin,608.0,5,9,33,42.0,"diff --git a/src/module_4/file_0.py b/src/module_4/file_0.py
+--- a/src/module_4/file_0.py
++++ b/src/module_4/file_0.py
+@@ -1,3 +1,4 @@
+ def fn_0():
+-    return 33
++    # refactor helper
++    return 9
+diff --git a/src/module_4/file_1.py b/src/module_4/file_1.py
+--- a/src/module_4/file_1.py
++++ b/src/module_4/file_1.py
+@@ -1,3 +1,4 @@
+ def fn_1():
+-    return 33
++    # refactor helper
++    return 10
+diff --git a/src/module_4/file_2.py b/src/module_4/file_2.py
+--- a/src/module_4/file_2.py
++++ b/src/module_4/file_2.py
+@@ -1,3 +1,4 @@
+ def fn_2():
+-    return 33
++    # refactor helper
++    return 11
+diff --git a/src/module_4/file_3.py b/src/module_4/file_3.py
+--- a/src/module_4/file_3.py
++++ b/src/module_4/file_3.py
+@@ -1,3 +1,4 @@
+ def fn_3():
+-    return 33
++    # refactor helper
++    return 12
+diff --git a/src/module_4/file_4.py b/src/module_4/file_4.py
+--- a/src/module_4/file_4.py
++++ b/src/module_4/file_4.py
+@@ -1,3 +1,4 @@
+ def fn_4():
+-    return 33
++    # refactor helper
++    return 13
+",0,synthetic_demo,2025-06-20 00:00:00+00:00,True
+demo/auth-gateway,1047,76fa1820208efb7ceeef08ffcd04cc1045c3a7ef,377f0b964e52e2889cc9f4435a5fc8a57929ffd4,frank,621.0,8,16,38,54.0,"diff --git a/src/module_5/file_0.py b/src/module_5/file_0.py
+--- a/src/module_5/file_0.py
++++ b/src/module_5/file_0.py
+@@ -1,3 +1,5 @@
+ def fn_0():
+-    return 38
++    # refactor helper
++    return 16
+diff --git a/src/module_5/file_1.py b/src/module_5/file_1.py
+--- a/src/module_5/file_1.py
++++ b/src/module_5/file_1.py
+@@ -1,3 +1,5 @@
+ def fn_1():
+-    return 38
++    # refactor helper
++    return 17
+diff --git a/src/module_5/file_2.py b/src/module_5/file_2.py
+--- a/src/module_5/file_2.py
++++ b/src/module_5/file_2.py
+@@ -1,3 +1,5 @@
+ def fn_2():
+-    return 38
++    # refactor helper
++    return 18
+diff --git a/src/module_5/file_3.py b/src/module_5/file_3.py
+--- a/src/module_5/file_3.py
++++ b/src/module_5/file_3.py
+@@ -1,3 +1,5 @@
+ def fn_3():
+-    return 38
++    # refactor helper
++    return 19
+diff --git a/src/module_5/file_4.py b/src/module_5/file_4.py
+--- a/src/module_5/file_4.py
++++ b/src/module_5/file_4.py
+@@ -1,3 +1,5 @@
+ def fn_4():
+-    return 38
++    # refactor helper
++    return 20
+diff --git a/src/module_5/file_5.py b/src/module_5/file_5.py
+--- a/src/module_5/file_5.py
++++ b/src/module_5/file_5.py
+@@ -1,3 +1,5 @@
+ def fn_5():
+-    return 38
++    # refactor helper
++    return 21
+diff --git a/src/module_5/file_6.py b/src/module_5/file_6.py
+--- a/src/module_5/file_6.py
++++ b/src/module_5/file_6.py
+@@ -1,3 +1,5 @@
+ def fn_6():
+-    return 38
++    # refactor helper
++    return 22
+diff --git a/src/module_5/file_7.py b/src/module_5/file_7.py
+--- a/src/module_5/file_7.py
++++ b/src/module_5/file_7.py
+@@ -1,3 +1,5 @@
+ def fn_7():
+-    return 38
++    # refactor helper
++    return 23
+",0,synthetic_demo,2025-06-20 01:00:00+00:00,True
+demo/billing-worker,1048,28fbc415140b3ea968723d8764ce136a09cda349,66b8350a3eebf257238cdcdd2e3e5edb1b0f48ac,alice,634.0,3,23,3,26.0,"diff --git a/src/module_6/file_0.py b/src/module_6/file_0.py
+--- a/src/module_6/file_0.py
++++ b/src/module_6/file_0.py
+@@ -1,3 +1,10 @@
+ def fn_0():
+-    return 3
++    # FIXME risky null deref
++    return 23
+diff --git a/src/module_6/file_1.py b/src/module_6/file_1.py
+--- a/src/module_6/file_1.py
++++ b/src/module_6/file_1.py
+@@ -1,3 +1,10 @@
+ def fn_1():
+-    return 3
++    # FIXME risky null deref
++    return 24
+diff --git a/src/module_6/file_2.py b/src/module_6/file_2.py
+--- a/src/module_6/file_2.py
++++ b/src/module_6/file_2.py
+@@ -1,3 +1,10 @@
+ def fn_2():
+-    return 3
++    # FIXME risky null deref
++    return 25
+",1,synthetic_demo,2025-06-20 02:00:00+00:00,True
+demo/search-indexer,1049,62119eab5487d4e239e8d504d095d773d7384e36,ac36c6786b47e9e1e91a12248d50a1679f693940,bob,647.0,6,30,8,38.0,"diff --git a/src/module_0/file_0.py b/src/module_0/file_0.py
+--- a/src/module_0/file_0.py
++++ b/src/module_0/file_0.py
+@@ -1,3 +1,8 @@
+ def fn_0():
+-    return 8
++    # FIXME risky null deref
++    return 30
+diff --git a/src/module_0/file_1.py b/src/module_0/file_1.py
+--- a/src/module_0/file_1.py
++++ b/src/module_0/file_1.py
+@@ -1,3 +1,8 @@
+ def fn_1():
+-    return 8
++    # FIXME risky null deref
++    return 31
+diff --git a/src/module_0/file_2.py b/src/module_0/file_2.py
+--- a/src/module_0/file_2.py
++++ b/src/module_0/file_2.py
+@@ -1,3 +1,8 @@
+ def fn_2():
+-    return 8
++    # FIXME risky null deref
++    return 32
+diff --git a/src/module_0/file_3.py b/src/module_0/file_3.py
+--- a/src/module_0/file_3.py
++++ b/src/module_0/file_3.py
+@@ -1,3 +1,8 @@
+ def fn_3():
+-    return 8
++    # FIXME risky null deref
++    return 33
+diff --git a/src/module_0/file_4.py b/src/module_0/file_4.py
+--- a/src/module_0/file_4.py
++++ b/src/module_0/file_4.py
+@@ -1,3 +1,8 @@
+ def fn_4():
+-    return 8
++    # FIXME risky null deref
++    return 34
+diff --git a/src/module_0/file_5.py b/src/module_0/file_5.py
+--- a/src/module_0/file_5.py
++++ b/src/module_0/file_5.py
+@@ -1,3 +1,8 @@
+ def fn_5():
+-    return 8
++    # FIXME risky null deref
++    return 35
+",1,synthetic_demo,2025-06-20 03:00:00+00:00,True
+demo/payments-service,1050,e4b0703b6562ddc6e12673247395607d731dc042,308ba68dc7805f98928d9c0c24fb7b85abe02756,carol,660.0,1,37,13,50.0,"diff --git a/src/module_1/file_0.py b/src/module_1/file_0.py
+--- a/src/module_1/file_0.py
++++ b/src/module_1/file_0.py
+@@ -1,3 +1,40 @@
+ def fn_0():
+-    return 13
++    # refactor helper
++    return 37
+",0,synthetic_demo,2025-06-22 04:00:00+00:00,True
+demo/inventory-api,1051,e129ba71f30a0742076379ec4ee062b476a057f5,8af08e058b336fa021a251e9d9e52cc5e4376584,dave,673.0,4,44,18,62.0,"diff --git a/src/module_2/file_0.py b/src/module_2/file_0.py
+--- a/src/module_2/file_0.py
++++ b/src/module_2/file_0.py
+@@ -1,3 +1,14 @@
+ def fn_0():
+-    return 18
++    # refactor helper
++    return 44
+diff --git a/src/module_2/file_1.py b/src/module_2/file_1.py
+--- a/src/module_2/file_1.py
++++ b/src/module_2/file_1.py
+@@ -1,3 +1,14 @@
+ def fn_1():
+-    return 18
++    # refactor helper
++    return 45
+diff --git a/src/module_2/file_2.py b/src/module_2/file_2.py
+--- a/src/module_2/file_2.py
++++ b/src/module_2/file_2.py
+@@ -1,3 +1,14 @@
+ def fn_2():
+-    return 18
++    # refactor helper
++    return 46
+diff --git a/src/module_2/file_3.py b/src/module_2/file_3.py
+--- a/src/module_2/file_3.py
++++ b/src/module_2/file_3.py
+@@ -1,3 +1,14 @@
+ def fn_3():
+-    return 18
++    # refactor helper
++    return 47
+",0,synthetic_demo,2025-06-21 12:00:00+00:00,True
+demo/auth-gateway,1052,26588a2a55281d277eceb499c2a6b0c391202406,cffc44ed232cc1497c27128407ab48519e2a216b,erin,686.0,7,51,23,74.0,"diff --git a/src/module_3/file_0.py b/src/module_3/file_0.py
+--- a/src/module_3/file_0.py
++++ b/src/module_3/file_0.py
+@@ -1,3 +1,10 @@
+ def fn_0():
+-    return 23
++    # refactor helper
++    return 51
+diff --git a/src/module_3/file_1.py b/src/module_3/file_1.py
+--- a/src/module_3/file_1.py
++++ b/src/module_3/file_1.py
+@@ -1,3 +1,10 @@
+ def fn_1():
+-    return 23
++    # refactor helper
++    return 52
+diff --git a/src/module_3/file_2.py b/src/module_3/file_2.py
+--- a/src/module_3/file_2.py
++++ b/src/module_3/file_2.py
+@@ -1,3 +1,10 @@
+ def fn_2():
+-    return 23
++    # refactor helper
++    return 53
+diff --git a/src/module_3/file_3.py b/src/module_3/file_3.py
+--- a/src/module_3/file_3.py
++++ b/src/module_3/file_3.py
+@@ -1,3 +1,10 @@
+ def fn_3():
+-    return 23
++    # refactor helper
++    return 54
+diff --git a/src/module_3/file_4.py b/src/module_3/file_4.py
+--- a/src/module_3/file_4.py
++++ b/src/module_3/file_4.py
+@@ -1,3 +1,10 @@
+ def fn_4():
+-    return 23
++    # refactor helper
++    return 55
+diff --git a/src/module_3/file_5.py b/src/module_3/file_5.py
+--- a/src/module_3/file_5.py
++++ b/src/module_3/file_5.py
+@@ -1,3 +1,10 @@
+ def fn_5():
+-    return 23
++    # refactor helper
++    return 56
+diff --git a/src/module_3/file_6.py b/src/module_3/file_6.py
+--- a/src/module_3/file_6.py
++++ b/src/module_3/file_6.py
+@@ -1,3 +1,10 @@
+ def fn_6():
+-    return 23
++    # refactor helper
++    return 57
+",0,synthetic_demo,2025-06-21 13:00:00+00:00,True
+demo/billing-worker,1053,0ad8a2eb13769e98722fb9e00cdab547a5e404e1,4510ddd090167d5d3b2aad7a0e1f51491070ba48,frank,699.0,2,58,28,86.0,"diff --git a/src/module_4/file_0.py b/src/module_4/file_0.py
+--- a/src/module_4/file_0.py
++++ b/src/module_4/file_0.py
+@@ -1,3 +1,32 @@
+ def fn_0():
+-    return 28
++    # FIXME risky null deref
++    return 58
+diff --git a/src/module_4/file_1.py b/src/module_4/file_1.py
+--- a/src/module_4/file_1.py
++++ b/src/module_4/file_1.py
+@@ -1,3 +1,32 @@
+ def fn_1():
+-    return 28
++    # FIXME risky null deref
++    return 59
+",1,synthetic_demo,2025-06-21 14:00:00+00:00,True
+demo/search-indexer,1054,56abf492c0ae1dba05f8517fb3e6e5bf3e7d0e8e,03ea90eaaa1b08c7fecf637bf5e1af4b279162ba,alice,712.0,5,65,33,98.0,"diff --git a/src/module_5/file_0.py b/src/module_5/file_0.py
+--- a/src/module_5/file_0.py
++++ b/src/module_5/file_0.py
+@@ -1,3 +1,16 @@
+ def fn_0():
+-    return 33
++    # refactor helper
++    return 65
+diff --git a/src/module_5/file_1.py b/src/module_5/file_1.py
+--- a/src/module_5/file_1.py
++++ b/src/module_5/file_1.py
+@@ -1,3 +1,16 @@
+ def fn_1():
+-    return 33
++    # refactor helper
++    return 66
+diff --git a/src/module_5/file_2.py b/src/module_5/file_2.py
+--- a/src/module_5/file_2.py
++++ b/src/module_5/file_2.py
+@@ -1,3 +1,16 @@
+ def fn_2():
+-    return 33
++    # refactor helper
++    return 67
+diff --git a/src/module_5/file_3.py b/src/module_5/file_3.py
+--- a/src/module_5/file_3.py
++++ b/src/module_5/file_3.py
+@@ -1,3 +1,16 @@
+ def fn_3():
+-    return 33
++    # refactor helper
++    return 68
+diff --git a/src/module_5/file_4.py b/src/module_5/file_4.py
+--- a/src/module_5/file_4.py
++++ b/src/module_5/file_4.py
+@@ -1,3 +1,16 @@
+ def fn_4():
+-    return 33
++    # refactor helper
++    return 69
+",0,synthetic_demo,2025-06-21 15:00:00+00:00,True
+demo/payments-service,1055,9b66da21073dbcdaacd87cc22224fa3509f6141b,0576a068df85c37e3e0d87cb1238c304cbb624db,bob,725.0,8,72,38,110.0,"diff --git a/src/module_6/file_0.py b/src/module_6/file_0.py
+--- a/src/module_6/file_0.py
++++ b/src/module_6/file_0.py
+@@ -1,3 +1,12 @@
+ def fn_0():
+-    return 38
++    # refactor helper
++    return 72
+diff --git a/src/module_6/file_1.py b/src/module_6/file_1.py
+--- a/src/module_6/file_1.py
++++ b/src/module_6/file_1.py
+@@ -1,3 +1,12 @@
+ def fn_1():
+-    return 38
++    # refactor helper
++    return 73
+diff --git a/src/module_6/file_2.py b/src/module_6/file_2.py
+--- a/src/module_6/file_2.py
++++ b/src/module_6/file_2.py
+@@ -1,3 +1,12 @@
+ def fn_2():
+-    return 38
++    # refactor helper
++    return 74
+diff --git a/src/module_6/file_3.py b/src/module_6/file_3.py
+--- a/src/module_6/file_3.py
++++ b/src/module_6/file_3.py
+@@ -1,3 +1,12 @@
+ def fn_3():
+-    return 38
++    # refactor helper
++    return 75
+diff --git a/src/module_6/file_4.py b/src/module_6/file_4.py
+--- a/src/module_6/file_4.py
++++ b/src/module_6/file_4.py
+@@ -1,3 +1,12 @@
+ def fn_4():
+-    return 38
++    # refactor helper
++    return 76
+diff --git a/src/module_6/file_5.py b/src/module_6/file_5.py
+--- a/src/module_6/file_5.py
++++ b/src/module_6/file_5.py
+@@ -1,3 +1,12 @@
+ def fn_5():
+-    return 38
++    # refactor helper
++    return 77
+diff --git a/src/module_6/file_6.py b/src/module_6/file_6.py
+--- a/src/module_6/file_6.py
++++ b/src/module_6/file_6.py
+@@ -1,3 +1,12 @@
+ def fn_6():
+-    return 38
++    # refactor helper
++    return 78
+diff --git a/src/module_6/file_7.py b/src/module_6/file_7.py
+--- a/src/module_6/file_7.py
++++ b/src/module_6/file_7.py
+@@ -1,3 +1,12 @@
+ def fn_7():
+-    return 38
++    # refactor helper
++    return 79
+",0,synthetic_demo,2025-06-23 16:00:00+00:00,True
+demo/inventory-api,1056,5abfcc6e467cbad54ef0463f0021fcf5403288e8,f5b87ba44c1dfb4814e31036344dc44f806bf0bb,carol,738.0,3,79,3,82.0,"diff --git a/src/module_0/file_0.py b/src/module_0/file_0.py
+--- a/src/module_0/file_0.py
++++ b/src/module_0/file_0.py
+@@ -1,3 +1,29 @@
+ def fn_0():
+-    return 3
++    # refactor helper
++    return 79
+diff --git a/src/module_0/file_1.py b/src/module_0/file_1.py
+--- a/src/module_0/file_1.py
++++ b/src/module_0/file_1.py
+@@ -1,3 +1,29 @@
+ def fn_1():
+-    return 3
++    # refactor helper
++    return 80
+diff --git a/src/module_0/file_2.py b/src/module_0/file_2.py
+--- a/src/module_0/file_2.py
++++ b/src/module_0/file_2.py
+@@ -1,3 +1,29 @@
+ def fn_2():
+-    return 3
++    # refactor helper
++    return 81
+",0,synthetic_demo,2025-06-23 17:00:00+00:00,True
+demo/auth-gateway,1057,89850be4ac171be1188db673d57eb8cb353afdbb,a70b702d5444715fcab303c0be5565785c60c2fb,dave,751.0,6,86,8,94.0,"diff --git a/src/module_1/file_0.py b/src/module_1/file_0.py
+--- a/src/module_1/file_0.py
++++ b/src/module_1/file_0.py
+@@ -1,3 +1,17 @@
+ def fn_0():
+-    return 8
++    # refactor helper
++    return 86
+diff --git a/src/module_1/file_1.py b/src/module_1/file_1.py
+--- a/src/module_1/file_1.py
++++ b/src/module_1/file_1.py
+@@ -1,3 +1,17 @@
+ def fn_1():
+-    return 8
++    # refactor helper
++    return 87
+diff --git a/src/module_1/file_2.py b/src/module_1/file_2.py
+--- a/src/module_1/file_2.py
++++ b/src/module_1/file_2.py
+@@ -1,3 +1,17 @@
+ def fn_2():
+-    return 8
++    # refactor helper
++    return 88
+diff --git a/src/module_1/file_3.py b/src/module_1/file_3.py
+--- a/src/module_1/file_3.py
++++ b/src/module_1/file_3.py
+@@ -1,3 +1,17 @@
+ def fn_3():
+-    return 8
++    # refactor helper
++    return 89
+diff --git a/src/module_1/file_4.py b/src/module_1/file_4.py
+--- a/src/module_1/file_4.py
++++ b/src/module_1/file_4.py
+@@ -1,3 +1,17 @@
+ def fn_4():
+-    return 8
++    # refactor helper
++    return 90
+diff --git a/src/module_1/file_5.py b/src/module_1/file_5.py
+--- a/src/module_1/file_5.py
++++ b/src/module_1/file_5.py
+@@ -1,3 +1,17 @@
+ def fn_5():
+-    return 8
++    # refactor helper
++    return 91
+",0,synthetic_demo,2025-06-23 18:00:00+00:00,True
+demo/billing-worker,1058,f5753178a1b2cf1ce580d4f93cea80a21ad1378f,3e472769aa0431cb2c100032efde1fa3353e11db,erin,764.0,1,93,13,106.0,"diff --git a/src/module_2/file_0.py b/src/module_2/file_0.py
+--- a/src/module_2/file_0.py
++++ b/src/module_2/file_0.py
+@@ -1,3 +1,96 @@
+ def fn_0():
+-    return 13
++    # refactor helper
++    return 93
+",0,synthetic_demo,2025-06-23 19:00:00+00:00,True
+demo/search-indexer,1059,5de8f840873672de06819d819cca7a72f5b8fa0c,79488aa80fcf97bf36605f3771c83c5b11facc81,frank,777.0,4,100,18,118.0,"diff --git a/src/module_3/file_0.py b/src/module_3/file_0.py
+--- a/src/module_3/file_0.py
++++ b/src/module_3/file_0.py
+@@ -1,3 +1,28 @@
+ def fn_0():
+-    return 18
++    # refactor helper
++    return 100
+diff --git a/src/module_3/file_1.py b/src/module_3/file_1.py
+--- a/src/module_3/file_1.py
++++ b/src/module_3/file_1.py
+@@ -1,3 +1,28 @@
+ def fn_1():
+-    return 18
++    # refactor helper
++    return 101
+diff --git a/src/module_3/file_2.py b/src/module_3/file_2.py
+--- a/src/module_3/file_2.py
++++ b/src/module_3/file_2.py
+@@ -1,3 +1,28 @@
+ def fn_2():
+-    return 18
++    # refactor helper
++    return 102
+diff --git a/src/module_3/file_3.py b/src/module_3/file_3.py
+--- a/src/module_3/file_3.py
++++ b/src/module_3/file_3.py
+@@ -1,3 +1,28 @@
+ def fn_3():
+-    return 18
++    # refactor helper
++    return 103
+",0,synthetic_demo,2025-06-23 20:00:00+00:00,True
+demo/payments-service,1060,2ca7fa98baf68ac676546607514656b3fc5a6cde,32c8be188cc3fc6d5dcde762d0bef71dc5ce9b1f,alice,790.0,7,107,23,130.0,"diff --git a/src/module_4/file_0.py b/src/module_4/file_0.py
+--- a/src/module_4/file_0.py
++++ b/src/module_4/file_0.py
+@@ -1,3 +1,18 @@
+ def fn_0():
+-    return 23
++    # refactor helper
++    return 107
+diff --git a/src/module_4/file_1.py b/src/module_4/file_1.py
+--- a/src/module_4/file_1.py
++++ b/src/module_4/file_1.py
+@@ -1,3 +1,18 @@
+ def fn_1():
+-    return 23
++    # refactor helper
++    return 108
+diff --git a/src/module_4/file_2.py b/src/module_4/file_2.py
+--- a/src/module_4/file_2.py
++++ b/src/module_4/file_2.py
+@@ -1,3 +1,18 @@
+ def fn_2():
+-    return 23
++    # refactor helper
++    return 109
+diff --git a/src/module_4/file_3.py b/src/module_4/file_3.py
+--- a/src/module_4/file_3.py
++++ b/src/module_4/file_3.py
+@@ -1,3 +1,18 @@
+ def fn_3():
+-    return 23
++    # refactor helper
++    return 110
+diff --git a/src/module_4/file_4.py b/src/module_4/file_4.py
+--- a/src/module_4/file_4.py
++++ b/src/module_4/file_4.py
+@@ -1,3 +1,18 @@
+ def fn_4():
+-    return 23
++    # refactor helper
++    return 111
+diff --git a/src/module_4/file_5.py b/src/module_4/file_5.py
+--- a/src/module_4/file_5.py
++++ b/src/module_4/file_5.py
+@@ -1,3 +1,18 @@
+ def fn_5():
+-    return 23
++    # refactor helper
++    return 112
+diff --git a/src/module_4/file_6.py b/src/module_4/file_6.py
+--- a/src/module_4/file_6.py
++++ b/src/module_4/file_6.py
+@@ -1,3 +1,18 @@
+ def fn_6():
+-    return 23
++    # refactor helper
++    return 113
+",0,synthetic_demo,2025-06-25 21:00:00+00:00,True
+demo/inventory-api,1061,a16cc49e38f956c31aabf74d62512595167d811c,e9750d0fb0ad28a7ab6e9a420e063a246acc6cf5,bob,803.0,2,114,28,142.0,"diff --git a/src/module_5/file_0.py b/src/module_5/file_0.py
+--- a/src/module_5/file_0.py
++++ b/src/module_5/file_0.py
+@@ -1,3 +1,60 @@
+ def fn_0():
+-    return 28
++    # refactor helper
++    return 114
+diff --git a/src/module_5/file_1.py b/src/module_5/file_1.py
+--- a/src/module_5/file_1.py
++++ b/src/module_5/file_1.py
+@@ -1,3 +1,60 @@
+ def fn_1():
+-    return 28
++    # refactor helper
++    return 115
+",0,synthetic_demo,2025-06-25 22:00:00+00:00,True
+demo/auth-gateway,1062,ed87dd2ec04dbb70064115380f33880ffd9538f7,e44604c5a7b71465dcbeac3d34c333f8fa7cd586,carol,16.0,5,121,33,154.0,"diff --git a/src/module_6/file_0.py b/src/module_6/file_0.py
+--- a/src/module_6/file_0.py
++++ b/src/module_6/file_0.py
+@@ -1,3 +1,27 @@
+ def fn_0():
+-    return 33
++    # refactor helper
++    return 121
+diff --git a/src/module_6/file_1.py b/src/module_6/file_1.py
+--- a/src/module_6/file_1.py
++++ b/src/module_6/file_1.py
+@@ -1,3 +1,27 @@
+ def fn_1():
+-    return 33
++    # refactor helper
++    return 122
+diff --git a/src/module_6/file_2.py b/src/module_6/file_2.py
+--- a/src/module_6/file_2.py
++++ b/src/module_6/file_2.py
+@@ -1,3 +1,27 @@
+ def fn_2():
+-    return 33
++    # refactor helper
++    return 123
+diff --git a/src/module_6/file_3.py b/src/module_6/file_3.py
+--- a/src/module_6/file_3.py
++++ b/src/module_6/file_3.py
+@@ -1,3 +1,27 @@
+ def fn_3():
+-    return 33
++    # refactor helper
++    return 124
+diff --git a/src/module_6/file_4.py b/src/module_6/file_4.py
+--- a/src/module_6/file_4.py
++++ b/src/module_6/file_4.py
+@@ -1,3 +1,27 @@
+ def fn_4():
+-    return 33
++    # refactor helper
++    return 125
+",0,synthetic_demo,2025-06-25 23:00:00+00:00,True
+demo/billing-worker,1063,89c5778b84137ef3b53f098c925676a8662424bc,9693115ee26f12368ed7010ec3d8708d105c128d,dave,29.0,8,8,38,46.0,"diff --git a/src/module_0/file_0.py b/src/module_0/file_0.py
+--- a/src/module_0/file_0.py
++++ b/src/module_0/file_0.py
+@@ -1,3 +1,4 @@
+ def fn_0():
+-    return 38
++    # FIXME risky null deref
++    return 8
+diff --git a/src/module_0/file_1.py b/src/module_0/file_1.py
+--- a/src/module_0/file_1.py
++++ b/src/module_0/file_1.py
+@@ -1,3 +1,4 @@
+ def fn_1():
+-    return 38
++    # FIXME risky null deref
++    return 9
+diff --git a/src/module_0/file_2.py b/src/module_0/file_2.py
+--- a/src/module_0/file_2.py
++++ b/src/module_0/file_2.py
+@@ -1,3 +1,4 @@
+ def fn_2():
+-    return 38
++    # FIXME risky null deref
++    return 10
+diff --git a/src/module_0/file_3.py b/src/module_0/file_3.py
+--- a/src/module_0/file_3.py
++++ b/src/module_0/file_3.py
+@@ -1,3 +1,4 @@
+ def fn_3():
+-    return 38
++    # FIXME risky null deref
++    return 11
+diff --git a/src/module_0/file_4.py b/src/module_0/file_4.py
+--- a/src/module_0/file_4.py
++++ b/src/module_0/file_4.py
+@@ -1,3 +1,4 @@
+ def fn_4():
+-    return 38
++    # FIXME risky null deref
++    return 12
+diff --git a/src/module_0/file_5.py b/src/module_0/file_5.py
+--- a/src/module_0/file_5.py
++++ b/src/module_0/file_5.py
+@@ -1,3 +1,4 @@
+ def fn_5():
+-    return 38
++    # FIXME risky null deref
++    return 13
+diff --git a/src/module_0/file_6.py b/src/module_0/file_6.py
+--- a/src/module_0/file_6.py
++++ b/src/module_0/file_6.py
+@@ -1,3 +1,4 @@
+ def fn_6():
+-    return 38
++    # FIXME risky null deref
++    return 14
+diff --git a/src/module_0/file_7.py b/src/module_0/file_7.py
+--- a/src/module_0/file_7.py
++++ b/src/module_0/file_7.py
+@@ -1,3 +1,4 @@
+ def fn_7():
+-    return 38
++    # FIXME risky null deref
++    return 15
+",1,synthetic_demo,2025-06-26 00:00:00+00:00,True
+demo/search-indexer,1064,6783553488cf520a2a486f2b2917818140b6e670,bdc5edf03e0b83231ad96b6f5fee9c31c862affe,erin,42.0,3,15,3,18.0,"diff --git a/src/module_1/file_0.py b/src/module_1/file_0.py
+--- a/src/module_1/file_0.py
++++ b/src/module_1/file_0.py
+@@ -1,3 +1,8 @@
+ def fn_0():
+-    return 3
++    # FIXME risky null deref
++    return 15
+diff --git a/src/module_1/file_1.py b/src/module_1/file_1.py
+--- a/src/module_1/file_1.py
++++ b/src/module_1/file_1.py
+@@ -1,3 +1,8 @@
+ def fn_1():
+-    return 3
++    # FIXME risky null deref
++    return 16
+diff --git a/src/module_1/file_2.py b/src/module_1/file_2.py
+--- a/src/module_1/file_2.py
++++ b/src/module_1/file_2.py
+@@ -1,3 +1,8 @@
+ def fn_2():
+-    return 3
++    # FIXME risky null deref
++    return 17
+",1,synthetic_demo,2025-06-26 01:00:00+00:00,True
+demo/payments-service,1065,28594ff77ba97c770a271b21af9d3f88aaa7a31a,c74dfb554950c3220bd01c81b6029382e8d3dd6a,frank,55.0,6,22,8,30.0,"diff --git a/src/module_2/file_0.py b/src/module_2/file_0.py
+--- a/src/module_2/file_0.py
++++ b/src/module_2/file_0.py
+@@ -1,3 +1,6 @@
+ def fn_0():
+-    return 8
++    # FIXME risky null deref
++    return 22
+diff --git a/src/module_2/file_1.py b/src/module_2/file_1.py
+--- a/src/module_2/file_1.py
++++ b/src/module_2/file_1.py
+@@ -1,3 +1,6 @@
+ def fn_1():
+-    return 8
++    # FIXME risky null deref
++    return 23
+diff --git a/src/module_2/file_2.py b/src/module_2/file_2.py
+--- a/src/module_2/file_2.py
++++ b/src/module_2/file_2.py
+@@ -1,3 +1,6 @@
+ def fn_2():
+-    return 8
++    # FIXME risky null deref
++    return 24
+diff --git a/src/module_2/file_3.py b/src/module_2/file_3.py
+--- a/src/module_2/file_3.py
++++ b/src/module_2/file_3.py
+@@ -1,3 +1,6 @@
+ def fn_3():
+-    return 8
++    # FIXME risky null deref
++    return 25
+diff --git a/src/module_2/file_4.py b/src/module_2/file_4.py
+--- a/src/module_2/file_4.py
++++ b/src/module_2/file_4.py
+@@ -1,3 +1,6 @@
+ def fn_4():
+-    return 8
++    # FIXME risky null deref
++    return 26
+diff --git a/src/module_2/file_5.py b/src/module_2/file_5.py
+--- a/src/module_2/file_5.py
++++ b/src/module_2/file_5.py
+@@ -1,3 +1,6 @@
+ def fn_5():
+-    return 8
++    # FIXME risky null deref
++    return 27
+",1,synthetic_demo,2025-06-28 02:00:00+00:00,True
+demo/inventory-api,1066,7ebaef2d5058930e6bc899fa8a198f1d6cffdaf1,c2678b7211e71f07941f7b72e212f4d475a46bd6,alice,68.0,1,29,13,42.0,"diff --git a/src/module_3/file_0.py b/src/module_3/file_0.py
+--- a/src/module_3/file_0.py
++++ b/src/module_3/file_0.py
+@@ -1,3 +1,32 @@
+ def fn_0():
+-    return 13
++    # refactor helper
++    return 29
+",0,synthetic_demo,2025-06-28 03:00:00+00:00,True
+demo/auth-gateway,1067,830fdf73965eb96c384e4da754741d6e8c022338,1c52f84664f5a412796ba13c054c330fc37f4f47,bob,81.0,4,36,18,54.0,"diff --git a/src/module_4/file_0.py b/src/module_4/file_0.py
+--- a/src/module_4/file_0.py
++++ b/src/module_4/file_0.py
+@@ -1,3 +1,12 @@
+ def fn_0():
+-    return 18
++    # FIXME risky null deref
++    return 36
+diff --git a/src/module_4/file_1.py b/src/module_4/file_1.py
+--- a/src/module_4/file_1.py
++++ b/src/module_4/file_1.py
+@@ -1,3 +1,12 @@
+ def fn_1():
+-    return 18
++    # FIXME risky null deref
++    return 37
+diff --git a/src/module_4/file_2.py b/src/module_4/file_2.py
+--- a/src/module_4/file_2.py
++++ b/src/module_4/file_2.py
+@@ -1,3 +1,12 @@
+ def fn_2():
+-    return 18
++    # FIXME risky null deref
++    return 38
+diff --git a/src/module_4/file_3.py b/src/module_4/file_3.py
+--- a/src/module_4/file_3.py
++++ b/src/module_4/file_3.py
+@@ -1,3 +1,12 @@
+ def fn_3():
+-    return 18
++    # FIXME risky null deref
++    return 39
+",1,synthetic_demo,2025-06-28 04:00:00+00:00,True
+demo/billing-worker,1068,b8272a2922653a98d73561b47ef47c19547e3684,ae00faa82489041138c9e869ad8919d23adf1b20,carol,94.0,7,43,23,66.0,"diff --git a/src/module_5/file_0.py b/src/module_5/file_0.py
+--- a/src/module_5/file_0.py
++++ b/src/module_5/file_0.py
+@@ -1,3 +1,9 @@
+ def fn_0():
+-    return 23
++    # refactor helper
++    return 43
+diff --git a/src/module_5/file_1.py b/src/module_5/file_1.py
+--- a/src/module_5/file_1.py
++++ b/src/module_5/file_1.py
+@@ -1,3 +1,9 @@
+ def fn_1():
+-    return 23
++    # refactor helper
++    return 44
+diff --git a/src/module_5/file_2.py b/src/module_5/file_2.py
+--- a/src/module_5/file_2.py
++++ b/src/module_5/file_2.py
+@@ -1,3 +1,9 @@
+ def fn_2():
+-    return 23
++    # refactor helper
++    return 45
+diff --git a/src/module_5/file_3.py b/src/module_5/file_3.py
+--- a/src/module_5/file_3.py
++++ b/src/module_5/file_3.py
+@@ -1,3 +1,9 @@
+ def fn_3():
+-    return 23
++    # refactor helper
++    return 46
+diff --git a/src/module_5/file_4.py b/src/module_5/file_4.py
+--- a/src/module_5/file_4.py
++++ b/src/module_5/file_4.py
+@@ -1,3 +1,9 @@
+ def fn_4():
+-    return 23
++    # refactor helper
++    return 47
+diff --git a/src/module_5/file_5.py b/src/module_5/file_5.py
+--- a/src/module_5/file_5.py
++++ b/src/module_5/file_5.py
+@@ -1,3 +1,9 @@
+ def fn_5():
+-    return 23
++    # refactor helper
++    return 48
+diff --git a/src/module_5/file_6.py b/src/module_5/file_6.py
+--- a/src/module_5/file_6.py
++++ b/src/module_5/file_6.py
+@@ -1,3 +1,9 @@
+ def fn_6():
+-    return 23
++    # refactor helper
++    return 49
+",0,synthetic_demo,2025-06-27 12:00:00+00:00,True
+demo/search-indexer,1069,567e3b3958795417845497b7280c0a5f82522e3e,cb0fffeb0b1734e93737dd98f697b777a5b9fb7c,dave,107.0,2,50,28,78.0,"diff --git a/src/module_6/file_0.py b/src/module_6/file_0.py
+--- a/src/module_6/file_0.py
++++ b/src/module_6/file_0.py
+@@ -1,3 +1,28 @@
+ def fn_0():
+-    return 28
++    # refactor helper
++    return 50
+diff --git a/src/module_6/file_1.py b/src/module_6/file_1.py
+--- a/src/module_6/file_1.py
++++ b/src/module_6/file_1.py
+@@ -1,3 +1,28 @@
+ def fn_1():
+-    return 28
++    # refactor helper
++    return 51
+",0,synthetic_demo,2025-06-27 13:00:00+00:00,True
+demo/payments-service,1070,e3ab8019521c9796b686342553411206bd61caa2,af92a772fb5f88a98fc3972c0828a5d02f8caa91,erin,120.0,5,57,33,90.0,"diff --git a/src/module_0/file_0.py b/src/module_0/file_0.py
+--- a/src/module_0/file_0.py
++++ b/src/module_0/file_0.py
+@@ -1,3 +1,14 @@
+ def fn_0():
+-    return 33
++    # refactor helper
++    return 57
+diff --git a/src/module_0/file_1.py b/src/module_0/file_1.py
+--- a/src/module_0/file_1.py
++++ b/src/module_0/file_1.py
+@@ -1,3 +1,14 @@
+ def fn_1():
+-    return 33
++    # refactor helper
++    return 58
+diff --git a/src/module_0/file_2.py b/src/module_0/file_2.py
+--- a/src/module_0/file_2.py
++++ b/src/module_0/file_2.py
+@@ -1,3 +1,14 @@
+ def fn_2():
+-    return 33
++    # refactor helper
++    return 59
+diff --git a/src/module_0/file_3.py b/src/module_0/file_3.py
+--- a/src/module_0/file_3.py
++++ b/src/module_0/file_3.py
+@@ -1,3 +1,14 @@
+ def fn_3():
+-    return 33
++    # refactor helper
++    return 60
+diff --git a/src/module_0/file_4.py b/src/module_0/file_4.py
+--- a/src/module_0/file_4.py
++++ b/src/module_0/file_4.py
+@@ -1,3 +1,14 @@
+ def fn_4():
+-    return 33
++    # refactor helper
++    return 61
+",0,synthetic_demo,2025-06-29 14:00:00+00:00,True
+demo/inventory-api,1071,46cab2c815e0c825ec34ac74c813b931222b7368,83b1272ecf9c320ee8e0c5d8cc73a1248d80b1b0,frank,133.0,8,64,38,102.0,"diff --git a/src/module_1/file_0.py b/src/module_1/file_0.py
+--- a/src/module_1/file_0.py
++++ b/src/module_1/file_0.py
+@@ -1,3 +1,11 @@
+ def fn_0():
+-    return 38
++    # FIXME risky null deref
++    return 64
+diff --git a/src/module_1/file_1.py b/src/module_1/file_1.py
+--- a/src/module_1/file_1.py
++++ b/src/module_1/file_1.py
+@@ -1,3 +1,11 @@
+ def fn_1():
+-    return 38
++    # FIXME risky null deref
++    return 65
+diff --git a/src/module_1/file_2.py b/src/module_1/file_2.py
+--- a/src/module_1/file_2.py
++++ b/src/module_1/file_2.py
+@@ -1,3 +1,11 @@
+ def fn_2():
+-    return 38
++    # FIXME risky null deref
++    return 66
+diff --git a/src/module_1/file_3.py b/src/module_1/file_3.py
+--- a/src/module_1/file_3.py
++++ b/src/module_1/file_3.py
+@@ -1,3 +1,11 @@
+ def fn_3():
+-    return 38
++    # FIXME risky null deref
++    return 67
+diff --git a/src/module_1/file_4.py b/src/module_1/file_4.py
+--- a/src/module_1/file_4.py
++++ b/src/module_1/file_4.py
+@@ -1,3 +1,11 @@
+ def fn_4():
+-    return 38
++    # FIXME risky null deref
++    return 68
+diff --git a/src/module_1/file_5.py b/src/module_1/file_5.py
+--- a/src/module_1/file_5.py
++++ b/src/module_1/file_5.py
+@@ -1,3 +1,11 @@
+ def fn_5():
+-    return 38
++    # FIXME risky null deref
++    return 69
+diff --git a/src/module_1/file_6.py b/src/module_1/file_6.py
+--- a/src/module_1/file_6.py
++++ b/src/module_1/file_6.py
+@@ -1,3 +1,11 @@
+ def fn_6():
+-    return 38
++    # FIXME risky null deref
++    return 70
+diff --git a/src/module_1/file_7.py b/src/module_1/file_7.py
+--- a/src/module_1/file_7.py
++++ b/src/module_1/file_7.py
+@@ -1,3 +1,11 @@
+ def fn_7():
+-    return 38
++    # FIXME risky null deref
++    return 71
+",1,synthetic_demo,2025-06-29 15:00:00+00:00,True
+demo/auth-gateway,1072,e9fae7bdfe58afc074ad046c98b642d5cc1d1ee4,821d9de060455951243df8ba38a6244f627b1623,alice,146.0,3,71,3,74.0,"diff --git a/src/module_2/file_0.py b/src/module_2/file_0.py
+--- a/src/module_2/file_0.py
++++ b/src/module_2/file_0.py
+@@ -1,3 +1,26 @@
+ def fn_0():
+-    return 3
++    # FIXME risky null deref
++    return 71
+diff --git a/src/module_2/file_1.py b/src/module_2/file_1.py
+--- a/src/module_2/file_1.py
++++ b/src/module_2/file_1.py
+@@ -1,3 +1,26 @@
+ def fn_1():
+-    return 3
++    # FIXME risky null deref
++    return 72
+diff --git a/src/module_2/file_2.py b/src/module_2/file_2.py
+--- a/src/module_2/file_2.py
++++ b/src/module_2/file_2.py
+@@ -1,3 +1,26 @@
+ def fn_2():
+-    return 3
++    # FIXME risky null deref
++    return 73
+",1,synthetic_demo,2025-06-29 16:00:00+00:00,True
+demo/billing-worker,1073,9839d181a5afc05feb52805419d4b4cd8101746f,4994f08e9ed7081bd02a22b1153ce9b8baca6e4e,bob,159.0,6,78,8,86.0,"diff --git a/src/module_3/file_0.py b/src/module_3/file_0.py
+--- a/src/module_3/file_0.py
++++ b/src/module_3/file_0.py
+@@ -1,3 +1,16 @@
+ def fn_0():
+-    return 8
++    # refactor helper
++    return 78
+diff --git a/src/module_3/file_1.py b/src/module_3/file_1.py
+--- a/src/module_3/file_1.py
++++ b/src/module_3/file_1.py
+@@ -1,3 +1,16 @@
+ def fn_1():
+-    return 8
++    # refactor helper
++    return 79
+diff --git a/src/module_3/file_2.py b/src/module_3/file_2.py
+--- a/src/module_3/file_2.py
++++ b/src/module_3/file_2.py
+@@ -1,3 +1,16 @@
+ def fn_2():
+-    return 8
++    # refactor helper
++    return 80
+diff --git a/src/module_3/file_3.py b/src/module_3/file_3.py
+--- a/src/module_3/file_3.py
++++ b/src/module_3/file_3.py
+@@ -1,3 +1,16 @@
+ def fn_3():
+-    return 8
++    # refactor helper
++    return 81
+diff --git a/src/module_3/file_4.py b/src/module_3/file_4.py
+--- a/src/module_3/file_4.py
++++ b/src/module_3/file_4.py
+@@ -1,3 +1,16 @@
+ def fn_4():
+-    return 8
++    # refactor helper
++    return 82
+diff --git a/src/module_3/file_5.py b/src/module_3/file_5.py
+--- a/src/module_3/file_5.py
++++ b/src/module_3/file_5.py
+@@ -1,3 +1,16 @@
+ def fn_5():
+-    return 8
++    # refactor helper
++    return 83
+",0,synthetic_demo,2025-06-29 17:00:00+00:00,True
+demo/search-indexer,1074,29532d8d8d6839129c10a757a5fbb6a31bb6bebb,9d9e0a3c1219ec5879153a26d60f3f5699b0a1d9,carol,172.0,1,85,13,98.0,"diff --git a/src/module_4/file_0.py b/src/module_4/file_0.py
+--- a/src/module_4/file_0.py
++++ b/src/module_4/file_0.py
+@@ -1,3 +1,88 @@
+ def fn_0():
+-    return 13
++    # FIXME risky null deref
++    return 85
+",1,synthetic_demo,2025-06-29 18:00:00+00:00,True
+demo/payments-service,1075,63a74a0ed28883b299308fed70d5572111a18035,f034a1b4f0da97eed92a2ddf17c26a0e2840c642,dave,185.0,4,92,18,110.0,"diff --git a/src/module_5/file_0.py b/src/module_5/file_0.py
+--- a/src/module_5/file_0.py
++++ b/src/module_5/file_0.py
+@@ -1,3 +1,26 @@
+ def fn_0():
+-    return 18
++    # refactor helper
++    return 92
+diff --git a/src/module_5/file_1.py b/src/module_5/file_1.py
+--- a/src/module_5/file_1.py
++++ b/src/module_5/file_1.py
+@@ -1,3 +1,26 @@
+ def fn_1():
+-    return 18
++    # refactor helper
++    return 93
+diff --git a/src/module_5/file_2.py b/src/module_5/file_2.py
+--- a/src/module_5/file_2.py
++++ b/src/module_5/file_2.py
+@@ -1,3 +1,26 @@
+ def fn_2():
+-    return 18
++    # refactor helper
++    return 94
+diff --git a/src/module_5/file_3.py b/src/module_5/file_3.py
+--- a/src/module_5/file_3.py
++++ b/src/module_5/file_3.py
+@@ -1,3 +1,26 @@
+ def fn_3():
+-    return 18
++    # refactor helper
++    return 95
+",0,synthetic_demo,2025-07-01 19:00:00+00:00,True
+demo/inventory-api,1076,505bea1e96c016a0a14305097ac34e4cb8c826d7,87dc70de9f0192eede5329f6a21e6f7bcd07fe7a,erin,198.0,7,99,23,122.0,"diff --git a/src/module_6/file_0.py b/src/module_6/file_0.py
+--- a/src/module_6/file_0.py
++++ b/src/module_6/file_0.py
+@@ -1,3 +1,17 @@
+ def fn_0():
+-    return 23
++    # refactor helper
++    return 99
+diff --git a/src/module_6/file_1.py b/src/module_6/file_1.py
+--- a/src/module_6/file_1.py
++++ b/src/module_6/file_1.py
+@@ -1,3 +1,17 @@
+ def fn_1():
+-    return 23
++    # refactor helper
++    return 100
+diff --git a/src/module_6/file_2.py b/src/module_6/file_2.py
+--- a/src/module_6/file_2.py
++++ b/src/module_6/file_2.py
+@@ -1,3 +1,17 @@
+ def fn_2():
+-    return 23
++    # refactor helper
++    return 101
+diff --git a/src/module_6/file_3.py b/src/module_6/file_3.py
+--- a/src/module_6/file_3.py
++++ b/src/module_6/file_3.py
+@@ -1,3 +1,17 @@
+ def fn_3():
+-    return 23
++    # refactor helper
++    return 102
+diff --git a/src/module_6/file_4.py b/src/module_6/file_4.py
+--- a/src/module_6/file_4.py
++++ b/src/module_6/file_4.py
+@@ -1,3 +1,17 @@
+ def fn_4():
+-    return 23
++    # refactor helper
++    return 103
+diff --git a/src/module_6/file_5.py b/src/module_6/file_5.py
+--- a/src/module_6/file_5.py
++++ b/src/module_6/file_5.py
+@@ -1,3 +1,17 @@
+ def fn_5():
+-    return 23
++    # refactor helper
++    return 104
+diff --git a/src/module_6/file_6.py b/src/module_6/file_6.py
+--- a/src/module_6/file_6.py
++++ b/src/module_6/file_6.py
+@@ -1,3 +1,17 @@
+ def fn_6():
+-    return 23
++    # refactor helper
++    return 105
+",0,synthetic_demo,2025-07-01 20:00:00+00:00,True
+demo/auth-gateway,1077,ab96d6e52484737641dedbe770355321a052ca80,1c2b6c00630b7653fe52ebf1ad34d24854115345,frank,211.0,2,106,28,134.0,"diff --git a/src/module_0/file_0.py b/src/module_0/file_0.py
+--- a/src/module_0/file_0.py
++++ b/src/module_0/file_0.py
+@@ -1,3 +1,56 @@
+ def fn_0():
+-    return 28
++    # refactor helper
++    return 106
+diff --git a/src/module_0/file_1.py b/src/module_0/file_1.py
+--- a/src/module_0/file_1.py
++++ b/src/module_0/file_1.py
+@@ -1,3 +1,56 @@
+ def fn_1():
+-    return 28
++    # refactor helper
++    return 107
+",0,synthetic_demo,2025-07-01 21:00:00+00:00,True
+demo/billing-worker,1078,bf6cfdbe48f6e2ede6e2b4599afcd317402c3341,1ff87d1d91b2b8b6773461796c53f073c408d450,alice,224.0,5,113,33,146.0,"diff --git a/src/module_1/file_0.py b/src/module_1/file_0.py
+--- a/src/module_1/file_0.py
++++ b/src/module_1/file_0.py
+@@ -1,3 +1,25 @@
+ def fn_0():
+-    return 33
++    # FIXME risky null deref
++    return 113
+diff --git a/src/module_1/file_1.py b/src/module_1/file_1.py
+--- a/src/module_1/file_1.py
++++ b/src/module_1/file_1.py
+@@ -1,3 +1,25 @@
+ def fn_1():
+-    return 33
++    # FIXME risky null deref
++    return 114
+diff --git a/src/module_1/file_2.py b/src/module_1/file_2.py
+--- a/src/module_1/file_2.py
++++ b/src/module_1/file_2.py
+@@ -1,3 +1,25 @@
+ def fn_2():
+-    return 33
++    # FIXME risky null deref
++    return 115
+diff --git a/src/module_1/file_3.py b/src/module_1/file_3.py
+--- a/src/module_1/file_3.py
++++ b/src/module_1/file_3.py
+@@ -1,3 +1,25 @@
+ def fn_3():
+-    return 33
++    # FIXME risky null deref
++    return 116
+diff --git a/src/module_1/file_4.py b/src/module_1/file_4.py
+--- a/src/module_1/file_4.py
++++ b/src/module_1/file_4.py
+@@ -1,3 +1,25 @@
+ def fn_4():
+-    return 33
++    # FIXME risky null deref
++    return 117
+",1,synthetic_demo,2025-07-01 22:00:00+00:00,True
+demo/search-indexer,1079,4dac9b0247da441307af791ac2a56d292a17efa1,f5e4696c04331f0abe2449af4b3086258a47d740,bob,237.0,8,120,38,158.0,"diff --git a/src/module_2/file_0.py b/src/module_2/file_0.py
+--- a/src/module_2/file_0.py
++++ b/src/module_2/file_0.py
+@@ -1,3 +1,18 @@
+ def fn_0():
+-    return 38
++    # refactor helper
++    return 120
+diff --git a/src/module_2/file_1.py b/src/module_2/file_1.py
+--- a/src/module_2/file_1.py
++++ b/src/module_2/file_1.py
+@@ -1,3 +1,18 @@
+ def fn_1():
+-    return 38
++    # refactor helper
++    return 121
+diff --git a/src/module_2/file_2.py b/src/module_2/file_2.py
+--- a/src/module_2/file_2.py
++++ b/src/module_2/file_2.py
+@@ -1,3 +1,18 @@
+ def fn_2():
+-    return 38
++    # refactor helper
++    return 122
+diff --git a/src/module_2/file_3.py b/src/module_2/file_3.py
+--- a/src/module_2/file_3.py
++++ b/src/module_2/file_3.py
+@@ -1,3 +1,18 @@
+ def fn_3():
+-    return 38
++    # refactor helper
++    return 123
+diff --git a/src/module_2/file_4.py b/src/module_2/file_4.py
+--- a/src/module_2/file_4.py
++++ b/src/module_2/file_4.py
+@@ -1,3 +1,18 @@
+ def fn_4():
+-    return 38
++    # refactor helper
++    return 124
+diff --git a/src/module_2/file_5.py b/src/module_2/file_5.py
+--- a/src/module_2/file_5.py
++++ b/src/module_2/file_5.py
+@@ -1,3 +1,18 @@
+ def fn_5():
+-    return 38
++    # refactor helper
++    return 125
+diff --git a/src/module_2/file_6.py b/src/module_2/file_6.py
+--- a/src/module_2/file_6.py
++++ b/src/module_2/file_6.py
+@@ -1,3 +1,18 @@
+ def fn_6():
+-    return 38
++    # refactor helper
++    return 126
+diff --git a/src/module_2/file_7.py b/src/module_2/file_7.py
+--- a/src/module_2/file_7.py
++++ b/src/module_2/file_7.py
+@@ -1,3 +1,18 @@
+ def fn_7():
+-    return 38
++    # refactor helper
++    return 127
+",0,synthetic_demo,2025-07-01 23:00:00+00:00,True
+demo/payments-service,1080,47b55b14d3454d96c93e4590af0d53e43ab252d2,f879c2b4de533aebdee4be75ed3a6a02a29e86fa,carol,250.0,3,7,3,10.0,"diff --git a/src/module_3/file_0.py b/src/module_3/file_0.py
+--- a/src/module_3/file_0.py
++++ b/src/module_3/file_0.py
+@@ -1,3 +1,5 @@
+ def fn_0():
+-    return 3
++    # refactor helper
++    return 7
+diff --git a/src/module_3/file_1.py b/src/module_3/file_1.py
+--- a/src/module_3/file_1.py
++++ b/src/module_3/file_1.py
+@@ -1,3 +1,5 @@
+ def fn_1():
+-    return 3
++    # refactor helper
++    return 8
+diff --git a/src/module_3/file_2.py b/src/module_3/file_2.py
+--- a/src/module_3/file_2.py
++++ b/src/module_3/file_2.py
+@@ -1,3 +1,5 @@
+ def fn_2():
+-    return 3
++    # refactor helper
++    return 9
+",0,synthetic_demo,2025-07-04 00:00:00+00:00,True
+demo/inventory-api,1081,bacc5e2352f8459d92775ba70eb2c96e6a6c82db,ab19608fe0ed3c31b7bac407408ccbd88e2934e1,dave,263.0,6,14,8,22.0,"diff --git a/src/module_4/file_0.py b/src/module_4/file_0.py
+--- a/src/module_4/file_0.py
++++ b/src/module_4/file_0.py
+@@ -1,3 +1,5 @@
+ def fn_0():
+-    return 8
++    # refactor helper
++    return 14
+diff --git a/src/module_4/file_1.py b/src/module_4/file_1.py
+--- a/src/module_4/file_1.py
++++ b/src/module_4/file_1.py
+@@ -1,3 +1,5 @@
+ def fn_1():
+-    return 8
++    # refactor helper
++    return 15
+diff --git a/src/module_4/file_2.py b/src/module_4/file_2.py
+--- a/src/module_4/file_2.py
++++ b/src/module_4/file_2.py
+@@ -1,3 +1,5 @@
+ def fn_2():
+-    return 8
++    # refactor helper
++    return 16
+diff --git a/src/module_4/file_3.py b/src/module_4/file_3.py
+--- a/src/module_4/file_3.py
++++ b/src/module_4/file_3.py
+@@ -1,3 +1,5 @@
+ def fn_3():
+-    return 8
++    # refactor helper
++    return 17
+diff --git a/src/module_4/file_4.py b/src/module_4/file_4.py
+--- a/src/module_4/file_4.py
++++ b/src/module_4/file_4.py
+@@ -1,3 +1,5 @@
+ def fn_4():
+-    return 8
++    # refactor helper
++    return 18
+diff --git a/src/module_4/file_5.py b/src/module_4/file_5.py
+--- a/src/module_4/file_5.py
++++ b/src/module_4/file_5.py
+@@ -1,3 +1,5 @@
+ def fn_5():
+-    return 8
++    # refactor helper
++    return 19
+",0,synthetic_demo,2025-07-04 01:00:00+00:00,True
+demo/auth-gateway,1082,25af44d514958af58ec1bdef183996fde5149ede,84ac7ab889e9a43d1755df59cfb6e6fd35f34423,erin,276.0,1,21,13,34.0,"diff --git a/src/module_5/file_0.py b/src/module_5/file_0.py
+--- a/src/module_5/file_0.py
++++ b/src/module_5/file_0.py
+@@ -1,3 +1,24 @@
+ def fn_0():
+-    return 13
++    # refactor helper
++    return 21
+",0,synthetic_demo,2025-07-04 02:00:00+00:00,True
+demo/billing-worker,1083,16bf9908646e4b073f7f1fd9deaeed76372dc018,24d51388faf59b7a0350bd3d9ee85ee9b7ff1f30,frank,289.0,4,28,18,46.0,"diff --git a/src/module_6/file_0.py b/src/module_6/file_0.py
+--- a/src/module_6/file_0.py
++++ b/src/module_6/file_0.py
+@@ -1,3 +1,10 @@
+ def fn_0():
+-    return 18
++    # refactor helper
++    return 28
+diff --git a/src/module_6/file_1.py b/src/module_6/file_1.py
+--- a/src/module_6/file_1.py
++++ b/src/module_6/file_1.py
+@@ -1,3 +1,10 @@
+ def fn_1():
+-    return 18
++    # refactor helper
++    return 29
+diff --git a/src/module_6/file_2.py b/src/module_6/file_2.py
+--- a/src/module_6/file_2.py
++++ b/src/module_6/file_2.py
+@@ -1,3 +1,10 @@
+ def fn_2():
+-    return 18
++    # refactor helper
++    return 30
+diff --git a/src/module_6/file_3.py b/src/module_6/file_3.py
+--- a/src/module_6/file_3.py
++++ b/src/module_6/file_3.py
+@@ -1,3 +1,10 @@
+ def fn_3():
+-    return 18
++    # refactor helper
++    return 31
+",0,synthetic_demo,2025-07-04 03:00:00+00:00,True
+demo/search-indexer,1084,7a888e0104eddb79340a0fedc16a0b6513066141,60f7303a970856ab7a66ffb21e4894f46b0ca87c,alice,302.0,7,35,23,58.0,"diff --git a/src/module_0/file_0.py b/src/module_0/file_0.py
+--- a/src/module_0/file_0.py
++++ b/src/module_0/file_0.py
+@@ -1,3 +1,8 @@
+ def fn_0():
+-    return 23
++    # refactor helper
++    return 35
+diff --git a/src/module_0/file_1.py b/src/module_0/file_1.py
+--- a/src/module_0/file_1.py
++++ b/src/module_0/file_1.py
+@@ -1,3 +1,8 @@
+ def fn_1():
+-    return 23
++    # refactor helper
++    return 36
+diff --git a/src/module_0/file_2.py b/src/module_0/file_2.py
+--- a/src/module_0/file_2.py
++++ b/src/module_0/file_2.py
+@@ -1,3 +1,8 @@
+ def fn_2():
+-    return 23
++    # refactor helper
++    return 37
+diff --git a/src/module_0/file_3.py b/src/module_0/file_3.py
+--- a/src/module_0/file_3.py
++++ b/src/module_0/file_3.py
+@@ -1,3 +1,8 @@
+ def fn_3():
+-    return 23
++    # refactor helper
++    return 38
+diff --git a/src/module_0/file_4.py b/src/module_0/file_4.py
+--- a/src/module_0/file_4.py
++++ b/src/module_0/file_4.py
+@@ -1,3 +1,8 @@
+ def fn_4():
+-    return 23
++    # refactor helper
++    return 39
+diff --git a/src/module_0/file_5.py b/src/module_0/file_5.py
+--- a/src/module_0/file_5.py
++++ b/src/module_0/file_5.py
+@@ -1,3 +1,8 @@
+ def fn_5():
+-    return 23
++    # refactor helper
++    return 40
+diff --git a/src/module_0/file_6.py b/src/module_0/file_6.py
+--- a/src/module_0/file_6.py
++++ b/src/module_0/file_6.py
+@@ -1,3 +1,8 @@
+ def fn_6():
+-    return 23
++    # refactor helper
++    return 41
+",0,synthetic_demo,2025-07-04 04:00:00+00:00,True
+demo/payments-service,1085,f9caca35c98b327150f2639f1b050e9c8623a8ca,6705841a6eccc327800a03104ed3543551c1d885,bob,315.0,2,42,28,70.0,"diff --git a/src/module_1/file_0.py b/src/module_1/file_0.py
+--- a/src/module_1/file_0.py
++++ b/src/module_1/file_0.py
+@@ -1,3 +1,24 @@
+ def fn_0():
+-    return 28
++    # FIXME risky null deref
++    return 42
+diff --git a/src/module_1/file_1.py b/src/module_1/file_1.py
+--- a/src/module_1/file_1.py
++++ b/src/module_1/file_1.py
+@@ -1,3 +1,24 @@
+ def fn_1():
+-    return 28
++    # FIXME risky null deref
++    return 43
+",1,synthetic_demo,2025-07-05 12:00:00+00:00,True
+demo/inventory-api,1086,70c516607b862314e2c9906e2cf235f5174db1f1,4bc684666dc677a5a66bbdeed561a49521c51d36,carol,328.0,5,49,33,82.0,"diff --git a/src/module_2/file_0.py b/src/module_2/file_0.py
+--- a/src/module_2/file_0.py
++++ b/src/module_2/file_0.py
+@@ -1,3 +1,12 @@
+ def fn_0():
+-    return 33
++    # refactor helper
++    return 49
+diff --git a/src/module_2/file_1.py b/src/module_2/file_1.py
+--- a/src/module_2/file_1.py
++++ b/src/module_2/file_1.py
+@@ -1,3 +1,12 @@
+ def fn_1():
+-    return 33
++    # refactor helper
++    return 50
+diff --git a/src/module_2/file_2.py b/src/module_2/file_2.py
+--- a/src/module_2/file_2.py
++++ b/src/module_2/file_2.py
+@@ -1,3 +1,12 @@
+ def fn_2():
+-    return 33
++    # refactor helper
++    return 51
+diff --git a/src/module_2/file_3.py b/src/module_2/file_3.py
+--- a/src/module_2/file_3.py
++++ b/src/module_2/file_3.py
+@@ -1,3 +1,12 @@
+ def fn_3():
+-    return 33
++    # refactor helper
++    return 52
+diff --git a/src/module_2/file_4.py b/src/module_2/file_4.py
+--- a/src/module_2/file_4.py
++++ b/src/module_2/file_4.py
+@@ -1,3 +1,12 @@
+ def fn_4():
+-    return 33
++    # refactor helper
++    return 53
+",0,synthetic_demo,2025-07-05 13:00:00+00:00,True
+demo/auth-gateway,1087,c867b77dbd16ad8920066e7eaad1e27a7b7af812,d6c25e070337b0448f9fa0c0af12b2a1976d81e1,dave,341.0,8,56,38,94.0,"diff --git a/src/module_3/file_0.py b/src/module_3/file_0.py
+--- a/src/module_3/file_0.py
++++ b/src/module_3/file_0.py
+@@ -1,3 +1,10 @@
+ def fn_0():
+-    return 38
++    # FIXME risky null deref
++    return 56
+diff --git a/src/module_3/file_1.py b/src/module_3/file_1.py
+--- a/src/module_3/file_1.py
++++ b/src/module_3/file_1.py
+@@ -1,3 +1,10 @@
+ def fn_1():
+-    return 38
++    # FIXME risky null deref
++    return 57
+diff --git a/src/module_3/file_2.py b/src/module_3/file_2.py
+--- a/src/module_3/file_2.py
++++ b/src/module_3/file_2.py
+@@ -1,3 +1,10 @@
+ def fn_2():
+-    return 38
++    # FIXME risky null deref
++    return 58
+diff --git a/src/module_3/file_3.py b/src/module_3/file_3.py
+--- a/src/module_3/file_3.py
++++ b/src/module_3/file_3.py
+@@ -1,3 +1,10 @@
+ def fn_3():
+-    return 38
++    # FIXME risky null deref
++    return 59
+diff --git a/src/module_3/file_4.py b/src/module_3/file_4.py
+--- a/src/module_3/file_4.py
++++ b/src/module_3/file_4.py
+@@ -1,3 +1,10 @@
+ def fn_4():
+-    return 38
++    # FIXME risky null deref
++    return 60
+diff --git a/src/module_3/file_5.py b/src/module_3/file_5.py
+--- a/src/module_3/file_5.py
++++ b/src/module_3/file_5.py
+@@ -1,3 +1,10 @@
+ def fn_5():
+-    return 38
++    # FIXME risky null deref
++    return 61
+diff --git a/src/module_3/file_6.py b/src/module_3/file_6.py
+--- a/src/module_3/file_6.py
++++ b/src/module_3/file_6.py
+@@ -1,3 +1,10 @@
+ def fn_6():
+-    return 38
++    # FIXME risky null deref
++    return 62
+diff --git a/src/module_3/file_7.py b/src/module_3/file_7.py
+--- a/src/module_3/file_7.py
++++ b/src/module_3/file_7.py
+@@ -1,3 +1,10 @@
+ def fn_7():
+-    return 38
++    # FIXME risky null deref
++    return 63
+",1,synthetic_demo,2025-07-05 14:00:00+00:00,True
+demo/billing-worker,1088,5c23defb28a8211556f10e0b2225a0923095cf74,0c86333d5d4faee6a43cef4e1c23ab479ecbc8ca,erin,354.0,3,63,3,66.0,"diff --git a/src/module_4/file_0.py b/src/module_4/file_0.py
+--- a/src/module_4/file_0.py
++++ b/src/module_4/file_0.py
+@@ -1,3 +1,24 @@
+ def fn_0():
+-    return 3
++    # refactor helper
++    return 63
+diff --git a/src/module_4/file_1.py b/src/module_4/file_1.py
+--- a/src/module_4/file_1.py
++++ b/src/module_4/file_1.py
+@@ -1,3 +1,24 @@
+ def fn_1():
+-    return 3
++    # refactor helper
++    return 64
+diff --git a/src/module_4/file_2.py b/src/module_4/file_2.py
+--- a/src/module_4/file_2.py
++++ b/src/module_4/file_2.py
+@@ -1,3 +1,24 @@
+ def fn_2():
+-    return 3
++    # refactor helper
++    return 65
+",0,synthetic_demo,2025-07-05 15:00:00+00:00,True
+demo/search-indexer,1089,28c4cb6a9b532572ba579dc84601339fc4f156c5,4d4e7800537812f56c5f5cf02c6469cffea289a4,frank,367.0,6,70,8,78.0,"diff --git a/src/module_5/file_0.py b/src/module_5/file_0.py
+--- a/src/module_5/file_0.py
++++ b/src/module_5/file_0.py
+@@ -1,3 +1,14 @@
+ def fn_0():
+-    return 8
++    # refactor helper
++    return 70
+diff --git a/src/module_5/file_1.py b/src/module_5/file_1.py
+--- a/src/module_5/file_1.py
++++ b/src/module_5/file_1.py
+@@ -1,3 +1,14 @@
+ def fn_1():
+-    return 8
++    # refactor helper
++    return 71
+diff --git a/src/module_5/file_2.py b/src/module_5/file_2.py
+--- a/src/module_5/file_2.py
++++ b/src/module_5/file_2.py
+@@ -1,3 +1,14 @@
+ def fn_2():
+-    return 8
++    # refactor helper
++    return 72
+diff --git a/src/module_5/file_3.py b/src/module_5/file_3.py
+--- a/src/module_5/file_3.py
++++ b/src/module_5/file_3.py
+@@ -1,3 +1,14 @@
+ def fn_3():
+-    return 8
++    # refactor helper
++    return 73
+diff --git a/src/module_5/file_4.py b/src/module_5/file_4.py
+--- a/src/module_5/file_4.py
++++ b/src/module_5/file_4.py
+@@ -1,3 +1,14 @@
+ def fn_4():
+-    return 8
++    # refactor helper
++    return 74
+diff --git a/src/module_5/file_5.py b/src/module_5/file_5.py
+--- a/src/module_5/file_5.py
++++ b/src/module_5/file_5.py
+@@ -1,3 +1,14 @@
+ def fn_5():
+-    return 8
++    # refactor helper
++    return 75
+",0,synthetic_demo,2025-07-05 16:00:00+00:00,True
+demo/payments-service,1090,b0c0d1b0dcaa82647818fef812f2c4fc9671b9fa,020deb8f4ef0ea5289e00e9e618b2751412e5784,alice,380.0,1,77,13,90.0,"diff --git a/src/module_6/file_0.py b/src/module_6/file_0.py
+--- a/src/module_6/file_0.py
++++ b/src/module_6/file_0.py
+@@ -1,3 +1,80 @@
+ def fn_0():
+-    return 13
++    # refactor helper
++    return 77
+",0,synthetic_demo,2025-07-07 17:00:00+00:00,True
+demo/inventory-api,1091,b28258f041e9b5507a31fe69757d849fd3f9fc7a,5d01d6ca1456841e876e070925d5bcb1107a0c11,bob,393.0,4,84,18,102.0,"diff --git a/src/module_0/file_0.py b/src/module_0/file_0.py
+--- a/src/module_0/file_0.py
++++ b/src/module_0/file_0.py
+@@ -1,3 +1,24 @@
+ def fn_0():
+-    return 18
++    # FIXME risky null deref
++    return 84
+diff --git a/src/module_0/file_1.py b/src/module_0/file_1.py
+--- a/src/module_0/file_1.py
++++ b/src/module_0/file_1.py
+@@ -1,3 +1,24 @@
+ def fn_1():
+-    return 18
++    # FIXME risky null deref
++    return 85
+diff --git a/src/module_0/file_2.py b/src/module_0/file_2.py
+--- a/src/module_0/file_2.py
++++ b/src/module_0/file_2.py
+@@ -1,3 +1,24 @@
+ def fn_2():
+-    return 18
++    # FIXME risky null deref
++    return 86
+diff --git a/src/module_0/file_3.py b/src/module_0/file_3.py
+--- a/src/module_0/file_3.py
++++ b/src/module_0/file_3.py
+@@ -1,3 +1,24 @@
+ def fn_3():
+-    return 18
++    # FIXME risky null deref
++    return 87
+",1,synthetic_demo,2025-07-07 18:00:00+00:00,True
+demo/auth-gateway,1092,923bcac48fe53fb10e8c755f4c3629c0f95c2be4,47592f960bd7bf966c70e4846b8cf1dbca0e8eaf,carol,406.0,7,91,23,114.0,"diff --git a/src/module_1/file_0.py b/src/module_1/file_0.py
+--- a/src/module_1/file_0.py
++++ b/src/module_1/file_0.py
+@@ -1,3 +1,16 @@
+ def fn_0():
+-    return 23
++    # refactor helper
++    return 91
+diff --git a/src/module_1/file_1.py b/src/module_1/file_1.py
+--- a/src/module_1/file_1.py
++++ b/src/module_1/file_1.py
+@@ -1,3 +1,16 @@
+ def fn_1():
+-    return 23
++    # refactor helper
++    return 92
+diff --git a/src/module_1/file_2.py b/src/module_1/file_2.py
+--- a/src/module_1/file_2.py
++++ b/src/module_1/file_2.py
+@@ -1,3 +1,16 @@
+ def fn_2():
+-    return 23
++    # refactor helper
++    return 93
+diff --git a/src/module_1/file_3.py b/src/module_1/file_3.py
+--- a/src/module_1/file_3.py
++++ b/src/module_1/file_3.py
+@@ -1,3 +1,16 @@
+ def fn_3():
+-    return 23
++    # refactor helper
++    return 94
+diff --git a/src/module_1/file_4.py b/src/module_1/file_4.py
+--- a/src/module_1/file_4.py
++++ b/src/module_1/file_4.py
+@@ -1,3 +1,16 @@
+ def fn_4():
+-    return 23
++    # refactor helper
++    return 95
+diff --git a/src/module_1/file_5.py b/src/module_1/file_5.py
+--- a/src/module_1/file_5.py
++++ b/src/module_1/file_5.py
+@@ -1,3 +1,16 @@
+ def fn_5():
+-    return 23
++    # refactor helper
++    return 96
+diff --git a/src/module_1/file_6.py b/src/module_1/file_6.py
+--- a/src/module_1/file_6.py
++++ b/src/module_1/file_6.py
+@@ -1,3 +1,16 @@
+ def fn_6():
+-    return 23
++    # refactor helper
++    return 97
+",0,synthetic_demo,2025-07-07 19:00:00+00:00,True
+demo/billing-worker,1093,b6570585d20c78d2a08f936db622b2f740291eec,4bb498bc3eb04cedc687ad891a8d49e12d609772,dave,419.0,2,98,28,126.0,"diff --git a/src/module_2/file_0.py b/src/module_2/file_0.py
+--- a/src/module_2/file_0.py
++++ b/src/module_2/file_0.py
+@@ -1,3 +1,52 @@
+ def fn_0():
+-    return 28
++    # FIXME risky null deref
++    return 98
+diff --git a/src/module_2/file_1.py b/src/module_2/file_1.py
+--- a/src/module_2/file_1.py
++++ b/src/module_2/file_1.py
+@@ -1,3 +1,52 @@
+ def fn_1():
+-    return 28
++    # FIXME risky null deref
++    return 99
+",1,synthetic_demo,2025-07-07 20:00:00+00:00,True
+demo/search-indexer,1094,26e32f47e55863c7135996427b30b614c60fb72d,1bcac209e85c0bc267aae5e889c31383a8b00a27,erin,432.0,5,105,33,138.0,"diff --git a/src/module_3/file_0.py b/src/module_3/file_0.py
+--- a/src/module_3/file_0.py
++++ b/src/module_3/file_0.py
+@@ -1,3 +1,24 @@
+ def fn_0():
+-    return 33
++    # FIXME risky null deref
++    return 105
+diff --git a/src/module_3/file_1.py b/src/module_3/file_1.py
+--- a/src/module_3/file_1.py
++++ b/src/module_3/file_1.py
+@@ -1,3 +1,24 @@
+ def fn_1():
+-    return 33
++    # FIXME risky null deref
++    return 106
+diff --git a/src/module_3/file_2.py b/src/module_3/file_2.py
+--- a/src/module_3/file_2.py
++++ b/src/module_3/file_2.py
+@@ -1,3 +1,24 @@
+ def fn_2():
+-    return 33
++    # FIXME risky null deref
++    return 107
+diff --git a/src/module_3/file_3.py b/src/module_3/file_3.py
+--- a/src/module_3/file_3.py
++++ b/src/module_3/file_3.py
+@@ -1,3 +1,24 @@
+ def fn_3():
+-    return 33
++    # FIXME risky null deref
++    return 108
+diff --git a/src/module_3/file_4.py b/src/module_3/file_4.py
+--- a/src/module_3/file_4.py
++++ b/src/module_3/file_4.py
+@@ -1,3 +1,24 @@
+ def fn_4():
+-    return 33
++    # FIXME risky null deref
++    return 109
+",1,synthetic_demo,2025-07-07 21:00:00+00:00,True
+demo/payments-service,1095,16d78b77bf4fb02fca6ec6b61c4d1e730d588b5f,02ea573856e82860b9edb915be2a00049622eb76,frank,445.0,8,112,38,150.0,"diff --git a/src/module_4/file_0.py b/src/module_4/file_0.py
+--- a/src/module_4/file_0.py
++++ b/src/module_4/file_0.py
+@@ -1,3 +1,17 @@
+ def fn_0():
+-    return 38
++    # refactor helper
++    return 112
+diff --git a/src/module_4/file_1.py b/src/module_4/file_1.py
+--- a/src/module_4/file_1.py
++++ b/src/module_4/file_1.py
+@@ -1,3 +1,17 @@
+ def fn_1():
+-    return 38
++    # refactor helper
++    return 113
+diff --git a/src/module_4/file_2.py b/src/module_4/file_2.py
+--- a/src/module_4/file_2.py
++++ b/src/module_4/file_2.py
+@@ -1,3 +1,17 @@
+ def fn_2():
+-    return 38
++    # refactor helper
++    return 114
+diff --git a/src/module_4/file_3.py b/src/module_4/file_3.py
+--- a/src/module_4/file_3.py
++++ b/src/module_4/file_3.py
+@@ -1,3 +1,17 @@
+ def fn_3():
+-    return 38
++    # refactor helper
++    return 115
+diff --git a/src/module_4/file_4.py b/src/module_4/file_4.py
+--- a/src/module_4/file_4.py
++++ b/src/module_4/file_4.py
+@@ -1,3 +1,17 @@
+ def fn_4():
+-    return 38
++    # refactor helper
++    return 116
+diff --git a/src/module_4/file_5.py b/src/module_4/file_5.py
+--- a/src/module_4/file_5.py
++++ b/src/module_4/file_5.py
+@@ -1,3 +1,17 @@
+ def fn_5():
+-    return 38
++    # refactor helper
++    return 117
+diff --git a/src/module_4/file_6.py b/src/module_4/file_6.py
+--- a/src/module_4/file_6.py
++++ b/src/module_4/file_6.py
+@@ -1,3 +1,17 @@
+ def fn_6():
+-    return 38
++    # refactor helper
++    return 118
+diff --git a/src/module_4/file_7.py b/src/module_4/file_7.py
+--- a/src/module_4/file_7.py
++++ b/src/module_4/file_7.py
+@@ -1,3 +1,17 @@
+ def fn_7():
+-    return 38
++    # refactor helper
++    return 119
+",0,synthetic_demo,2025-07-09 22:00:00+00:00,True
+demo/inventory-api,1096,b918a420ceaff04cd6701934326efda506116bb2,8327b2ad86cf3af7b6eebfa30cd2f7a9cbcef3b0,alice,458.0,3,119,3,122.0,"diff --git a/src/module_5/file_0.py b/src/module_5/file_0.py
+--- a/src/module_5/file_0.py
++++ b/src/module_5/file_0.py
+@@ -1,3 +1,42 @@
+ def fn_0():
+-    return 3
++    # FIXME risky null deref
++    return 119
+diff --git a/src/module_5/file_1.py b/src/module_5/file_1.py
+--- a/src/module_5/file_1.py
++++ b/src/module_5/file_1.py
+@@ -1,3 +1,42 @@
+ def fn_1():
+-    return 3
++    # FIXME risky null deref
++    return 120
+diff --git a/src/module_5/file_2.py b/src/module_5/file_2.py
+--- a/src/module_5/file_2.py
++++ b/src/module_5/file_2.py
+@@ -1,3 +1,42 @@
+ def fn_2():
+-    return 3
++    # FIXME risky null deref
++    return 121
+",1,synthetic_demo,2025-07-09 23:00:00+00:00,True
+demo/auth-gateway,1097,c26a2e54517f285323556825acd8d907afdf1c72,7b0528f8088d4324d41883b236099cdf258baed7,bob,471.0,6,6,8,14.0,"diff --git a/src/module_6/file_0.py b/src/module_6/file_0.py
+--- a/src/module_6/file_0.py
++++ b/src/module_6/file_0.py
+@@ -1,3 +1,4 @@
+ def fn_0():
+-    return 8
++    # refactor helper
++    return 6
+diff --git a/src/module_6/file_1.py b/src/module_6/file_1.py
+--- a/src/module_6/file_1.py
++++ b/src/module_6/file_1.py
+@@ -1,3 +1,4 @@
+ def fn_1():
+-    return 8
++    # refactor helper
++    return 7
+diff --git a/src/module_6/file_2.py b/src/module_6/file_2.py
+--- a/src/module_6/file_2.py
++++ b/src/module_6/file_2.py
+@@ -1,3 +1,4 @@
+ def fn_2():
+-    return 8
++    # refactor helper
++    return 8
+diff --git a/src/module_6/file_3.py b/src/module_6/file_3.py
+--- a/src/module_6/file_3.py
++++ b/src/module_6/file_3.py
+@@ -1,3 +1,4 @@
+ def fn_3():
+-    return 8
++    # refactor helper
++    return 9
+diff --git a/src/module_6/file_4.py b/src/module_6/file_4.py
+--- a/src/module_6/file_4.py
++++ b/src/module_6/file_4.py
+@@ -1,3 +1,4 @@
+ def fn_4():
+-    return 8
++    # refactor helper
++    return 10
+diff --git a/src/module_6/file_5.py b/src/module_6/file_5.py
+--- a/src/module_6/file_5.py
++++ b/src/module_6/file_5.py
+@@ -1,3 +1,4 @@
+ def fn_5():
+-    return 8
++    # refactor helper
++    return 11
+",0,synthetic_demo,2025-07-10 00:00:00+00:00,True
+demo/billing-worker,1098,689feadc58196ef0eacc18829720bf0dbdcf248e,d7e014205a2f4938832a0e50c19038a77cdf8895,carol,484.0,1,13,13,26.0,"diff --git a/src/module_0/file_0.py b/src/module_0/file_0.py
+--- a/src/module_0/file_0.py
++++ b/src/module_0/file_0.py
+@@ -1,3 +1,16 @@
+ def fn_0():
+-    return 13
++    # FIXME risky null deref
++    return 13
+",1,synthetic_demo,2025-07-10 01:00:00+00:00,True
+demo/search-indexer,1099,419480c171846cdd19d4e7016a6618a0629942b1,a7c4152c519d2de14ffb2ee9eeabebf9b8b2dd39,dave,497.0,4,20,18,38.0,"diff --git a/src/module_1/file_0.py b/src/module_1/file_0.py
+--- a/src/module_1/file_0.py
++++ b/src/module_1/file_0.py
+@@ -1,3 +1,8 @@
+ def fn_0():
+-    return 18
++    # refactor helper
++    return 20
+diff --git a/src/module_1/file_1.py b/src/module_1/file_1.py
+--- a/src/module_1/file_1.py
++++ b/src/module_1/file_1.py
+@@ -1,3 +1,8 @@
+ def fn_1():
+-    return 18
++    # refactor helper
++    return 21
+diff --git a/src/module_1/file_2.py b/src/module_1/file_2.py
+--- a/src/module_1/file_2.py
++++ b/src/module_1/file_2.py
+@@ -1,3 +1,8 @@
+ def fn_2():
+-    return 18
++    # refactor helper
++    return 22
+diff --git a/src/module_1/file_3.py b/src/module_1/file_3.py
+--- a/src/module_1/file_3.py
++++ b/src/module_1/file_3.py
+@@ -1,3 +1,8 @@
+ def fn_3():
+-    return 18
++    # refactor helper
++    return 23
+",0,synthetic_demo,2025-07-10 02:00:00+00:00,True
+demo/payments-service,1100,a22be2a2af4ad38fb0c902875f08f7d51bae2d7b,954ae866ce8c56afcba029d1ae746bc5f6cdee0b,erin,510.0,7,27,23,50.0,"diff --git a/src/module_2/file_0.py b/src/module_2/file_0.py
+--- a/src/module_2/file_0.py
++++ b/src/module_2/file_0.py
+@@ -1,3 +1,6 @@
+ def fn_0():
+-    return 23
++    # refactor helper
++    return 27
+diff --git a/src/module_2/file_1.py b/src/module_2/file_1.py
+--- a/src/module_2/file_1.py
++++ b/src/module_2/file_1.py
+@@ -1,3 +1,6 @@
+ def fn_1():
+-    return 23
++    # refactor helper
++    return 28
+diff --git a/src/module_2/file_2.py b/src/module_2/file_2.py
+--- a/src/module_2/file_2.py
++++ b/src/module_2/file_2.py
+@@ -1,3 +1,6 @@
+ def fn_2():
+-    return 23
++    # refactor helper
++    return 29
+diff --git a/src/module_2/file_3.py b/src/module_2/file_3.py
+--- a/src/module_2/file_3.py
++++ b/src/module_2/file_3.py
+@@ -1,3 +1,6 @@
+ def fn_3():
+-    return 23
++    # refactor helper
++    return 30
+diff --git a/src/module_2/file_4.py b/src/module_2/file_4.py
+--- a/src/module_2/file_4.py
++++ b/src/module_2/file_4.py
+@@ -1,3 +1,6 @@
+ def fn_4():
+-    return 23
++    # refactor helper
++    return 31
+diff --git a/src/module_2/file_5.py b/src/module_2/file_5.py
+--- a/src/module_2/file_5.py
++++ b/src/module_2/file_5.py
+@@ -1,3 +1,6 @@
+ def fn_5():
+-    return 23
++    # refactor helper
++    return 32
+diff --git a/src/module_2/file_6.py b/src/module_2/file_6.py
+--- a/src/module_2/file_6.py
++++ b/src/module_2/file_6.py
+@@ -1,3 +1,6 @@
+ def fn_6():
+-    return 23
++    # refactor helper
++    return 33
+",0,synthetic_demo,2025-07-12 03:00:00+00:00,True
+demo/inventory-api,1101,76368d453a44d6c3baaaa3e574e6fee237b879f6,a734b752739b80ad60a4e1d230314c096e5e0dc1,frank,523.0,2,34,28,62.0,"diff --git a/src/module_3/file_0.py b/src/module_3/file_0.py
+--- a/src/module_3/file_0.py
++++ b/src/module_3/file_0.py
+@@ -1,3 +1,20 @@
+ def fn_0():
+-    return 28
++    # refactor helper
++    return 34
+diff --git a/src/module_3/file_1.py b/src/module_3/file_1.py
+--- a/src/module_3/file_1.py
++++ b/src/module_3/file_1.py
+@@ -1,3 +1,20 @@
+ def fn_1():
+-    return 28
++    # refactor helper
++    return 35
+",0,synthetic_demo,2025-07-12 04:00:00+00:00,True
+demo/auth-gateway,1102,afb00168c62ea0434c7abd4a8ff1767d04bce8a9,c703b14a10c7d2ed854bb9ac54c2118f085f3994,alice,536.0,5,41,33,74.0,"diff --git a/src/module_4/file_0.py b/src/module_4/file_0.py
+--- a/src/module_4/file_0.py
++++ b/src/module_4/file_0.py
+@@ -1,3 +1,11 @@
+ def fn_0():
+-    return 33
++    # FIXME risky null deref
++    return 41
+diff --git a/src/module_4/file_1.py b/src/module_4/file_1.py
+--- a/src/module_4/file_1.py
++++ b/src/module_4/file_1.py
+@@ -1,3 +1,11 @@
+ def fn_1():
+-    return 33
++    # FIXME risky null deref
++    return 42
+diff --git a/src/module_4/file_2.py b/src/module_4/file_2.py
+--- a/src/module_4/file_2.py
++++ b/src/module_4/file_2.py
+@@ -1,3 +1,11 @@
+ def fn_2():
+-    return 33
++    # FIXME risky null deref
++    return 43
+diff --git a/src/module_4/file_3.py b/src/module_4/file_3.py
+--- a/src/module_4/file_3.py
++++ b/src/module_4/file_3.py
+@@ -1,3 +1,11 @@
+ def fn_3():
+-    return 33
++    # FIXME risky null deref
++    return 44
+diff --git a/src/module_4/file_4.py b/src/module_4/file_4.py
+--- a/src/module_4/file_4.py
++++ b/src/module_4/file_4.py
+@@ -1,3 +1,11 @@
+ def fn_4():
+-    return 33
++    # FIXME risky null deref
++    return 45
+",1,synthetic_demo,2025-07-11 12:00:00+00:00,True
+demo/billing-worker,1103,cc3f9506efca7a261c0f7e486bd1ecc31e14d5f4,eee1a2ba7c65eff0d0aa7bd3bf172c497db663cc,bob,549.0,8,48,38,86.0,"diff --git a/src/module_5/file_0.py b/src/module_5/file_0.py
+--- a/src/module_5/file_0.py
++++ b/src/module_5/file_0.py
+@@ -1,3 +1,9 @@
+ def fn_0():
+-    return 38
++    # FIXME risky null deref
++    return 48
+diff --git a/src/module_5/file_1.py b/src/module_5/file_1.py
+--- a/src/module_5/file_1.py
++++ b/src/module_5/file_1.py
+@@ -1,3 +1,9 @@
+ def fn_1():
+-    return 38
++    # FIXME risky null deref
++    return 49
+diff --git a/src/module_5/file_2.py b/src/module_5/file_2.py
+--- a/src/module_5/file_2.py
++++ b/src/module_5/file_2.py
+@@ -1,3 +1,9 @@
+ def fn_2():
+-    return 38
++    # FIXME risky null deref
++    return 50
+diff --git a/src/module_5/file_3.py b/src/module_5/file_3.py
+--- a/src/module_5/file_3.py
++++ b/src/module_5/file_3.py
+@@ -1,3 +1,9 @@
+ def fn_3():
+-    return 38
++    # FIXME risky null deref
++    return 51
+diff --git a/src/module_5/file_4.py b/src/module_5/file_4.py
+--- a/src/module_5/file_4.py
++++ b/src/module_5/file_4.py
+@@ -1,3 +1,9 @@
+ def fn_4():
+-    return 38
++    # FIXME risky null deref
++    return 52
+diff --git a/src/module_5/file_5.py b/src/module_5/file_5.py
+--- a/src/module_5/file_5.py
++++ b/src/module_5/file_5.py
+@@ -1,3 +1,9 @@
+ def fn_5():
+-    return 38
++    # FIXME risky null deref
++    return 53
+diff --git a/src/module_5/file_6.py b/src/module_5/file_6.py
+--- a/src/module_5/file_6.py
++++ b/src/module_5/file_6.py
+@@ -1,3 +1,9 @@
+ def fn_6():
+-    return 38
++    # FIXME risky null deref
++    return 54
+diff --git a/src/module_5/file_7.py b/src/module_5/file_7.py
+--- a/src/module_5/file_7.py
++++ b/src/module_5/file_7.py
+@@ -1,3 +1,9 @@
+ def fn_7():
+-    return 38
++    # FIXME risky null deref
++    return 55
+",1,synthetic_demo,2025-07-11 13:00:00+00:00,True
+demo/search-indexer,1104,c61ada75f5a8e38b8812d7480a760343380732bb,1bea5d8ea30601d1ffe89c980a80b86d553a446d,carol,562.0,3,55,3,58.0,"diff --git a/src/module_6/file_0.py b/src/module_6/file_0.py
+--- a/src/module_6/file_0.py
++++ b/src/module_6/file_0.py
+@@ -1,3 +1,21 @@
+ def fn_0():
+-    return 3
++    # refactor helper
++    return 55
+diff --git a/src/module_6/file_1.py b/src/module_6/file_1.py
+--- a/src/module_6/file_1.py
++++ b/src/module_6/file_1.py
+@@ -1,3 +1,21 @@
+ def fn_1():
+-    return 3
++    # refactor helper
++    return 56
+diff --git a/src/module_6/file_2.py b/src/module_6/file_2.py
+--- a/src/module_6/file_2.py
++++ b/src/module_6/file_2.py
+@@ -1,3 +1,21 @@
+ def fn_2():
+-    return 3
++    # refactor helper
++    return 57
+",0,synthetic_demo,2025-07-11 14:00:00+00:00,True
+demo/payments-service,1105,67b86d57399aa9f504e545f5da1a6eb7d282e3e5,c59a326b3cb774f52376392cf80d66ade8b10c20,dave,575.0,6,62,8,70.0,"diff --git a/src/module_0/file_0.py b/src/module_0/file_0.py
+--- a/src/module_0/file_0.py
++++ b/src/module_0/file_0.py
+@@ -1,3 +1,13 @@
+ def fn_0():
+-    return 8
++    # FIXME risky null deref
++    return 62
+diff --git a/src/module_0/file_1.py b/src/module_0/file_1.py
+--- a/src/module_0/file_1.py
++++ b/src/module_0/file_1.py
+@@ -1,3 +1,13 @@
+ def fn_1():
+-    return 8
++    # FIXME risky null deref
++    return 63
+diff --git a/src/module_0/file_2.py b/src/module_0/file_2.py
+--- a/src/module_0/file_2.py
++++ b/src/module_0/file_2.py
+@@ -1,3 +1,13 @@
+ def fn_2():
+-    return 8
++    # FIXME risky null deref
++    return 64
+diff --git a/src/module_0/file_3.py b/src/module_0/file_3.py
+--- a/src/module_0/file_3.py
++++ b/src/module_0/file_3.py
+@@ -1,3 +1,13 @@
+ def fn_3():
+-    return 8
++    # FIXME risky null deref
++    return 65
+diff --git a/src/module_0/file_4.py b/src/module_0/file_4.py
+--- a/src/module_0/file_4.py
++++ b/src/module_0/file_4.py
+@@ -1,3 +1,13 @@
+ def fn_4():
+-    return 8
++    # FIXME risky null deref
++    return 66
+diff --git a/src/module_0/file_5.py b/src/module_0/file_5.py
+--- a/src/module_0/file_5.py
++++ b/src/module_0/file_5.py
+@@ -1,3 +1,13 @@
+ def fn_5():
+-    return 8
++    # FIXME risky null deref
++    return 67
+",1,synthetic_demo,2025-07-13 15:00:00+00:00,True
+demo/inventory-api,1106,fda7363f321d980f117509bbe89a71e4f5354ca0,4a8bdc88f8c178fa0c1823a11488e0be37f4b852,erin,588.0,1,69,13,82.0,"diff --git a/src/module_1/file_0.py b/src/module_1/file_0.py
+--- a/src/module_1/file_0.py
++++ b/src/module_1/file_0.py
+@@ -1,3 +1,72 @@
+ def fn_0():
+-    return 13
++    # refactor helper
++    return 69
+",0,synthetic_demo,2025-07-13 16:00:00+00:00,True
+demo/auth-gateway,1107,d07066c0f747a046bf8752d234a6e743b9cf92ac,1f4a861e7a141be6fbbc1810cde9deb63261e963,frank,601.0,4,76,18,94.0,"diff --git a/src/module_2/file_0.py b/src/module_2/file_0.py
+--- a/src/module_2/file_0.py
++++ b/src/module_2/file_0.py
+@@ -1,3 +1,22 @@
+ def fn_0():
+-    return 18
++    # FIXME risky null deref
++    return 76
+diff --git a/src/module_2/file_1.py b/src/module_2/file_1.py
+--- a/src/module_2/file_1.py
++++ b/src/module_2/file_1.py
+@@ -1,3 +1,22 @@
+ def fn_1():
+-    return 18
++    # FIXME risky null deref
++    return 77
+diff --git a/src/module_2/file_2.py b/src/module_2/file_2.py
+--- a/src/module_2/file_2.py
++++ b/src/module_2/file_2.py
+@@ -1,3 +1,22 @@
+ def fn_2():
+-    return 18
++    # FIXME risky null deref
++    return 78
+diff --git a/src/module_2/file_3.py b/src/module_2/file_3.py
+--- a/src/module_2/file_3.py
++++ b/src/module_2/file_3.py
+@@ -1,3 +1,22 @@
+ def fn_3():
+-    return 18
++    # FIXME risky null deref
++    return 79
+",1,synthetic_demo,2025-07-13 17:00:00+00:00,True
+demo/billing-worker,1108,c1a89dec7a46e06544d6216e9d69446dc1baa4b6,4010bc8d14df100f3fe21501c346044956dd11ca,alice,614.0,7,83,23,106.0,"diff --git a/src/module_3/file_0.py b/src/module_3/file_0.py
+--- a/src/module_3/file_0.py
++++ b/src/module_3/file_0.py
+@@ -1,3 +1,14 @@
+ def fn_0():
+-    return 23
++    # refactor helper
++    return 83
+diff --git a/src/module_3/file_1.py b/src/module_3/file_1.py
+--- a/src/module_3/file_1.py
++++ b/src/module_3/file_1.py
+@@ -1,3 +1,14 @@
+ def fn_1():
+-    return 23
++    # refactor helper
++    return 84
+diff --git a/src/module_3/file_2.py b/src/module_3/file_2.py
+--- a/src/module_3/file_2.py
++++ b/src/module_3/file_2.py
+@@ -1,3 +1,14 @@
+ def fn_2():
+-    return 23
++    # refactor helper
++    return 85
+diff --git a/src/module_3/file_3.py b/src/module_3/file_3.py
+--- a/src/module_3/file_3.py
++++ b/src/module_3/file_3.py
+@@ -1,3 +1,14 @@
+ def fn_3():
+-    return 23
++    # refactor helper
++    return 86
+diff --git a/src/module_3/file_4.py b/src/module_3/file_4.py
+--- a/src/module_3/file_4.py
++++ b/src/module_3/file_4.py
+@@ -1,3 +1,14 @@
+ def fn_4():
+-    return 23
++    # refactor helper
++    return 87
+diff --git a/src/module_3/file_5.py b/src/module_3/file_5.py
+--- a/src/module_3/file_5.py
++++ b/src/module_3/file_5.py
+@@ -1,3 +1,14 @@
+ def fn_5():
+-    return 23
++    # refactor helper
++    return 88
+diff --git a/src/module_3/file_6.py b/src/module_3/file_6.py
+--- a/src/module_3/file_6.py
++++ b/src/module_3/file_6.py
+@@ -1,3 +1,14 @@
+ def fn_6():
+-    return 23
++    # refactor helper
++    return 89
+",0,synthetic_demo,2025-07-13 18:00:00+00:00,True
+demo/search-indexer,1109,9e63881c90da6a841209559df30b1ceca05dc748,7b592056979d7a49aebe204b3f5cff8df431de14,bob,627.0,2,90,28,118.0,"diff --git a/src/module_4/file_0.py b/src/module_4/file_0.py
+--- a/src/module_4/file_0.py
++++ b/src/module_4/file_0.py
+@@ -1,3 +1,48 @@
+ def fn_0():
+-    return 28
++    # FIXME risky null deref
++    return 90
+diff --git a/src/module_4/file_1.py b/src/module_4/file_1.py
+--- a/src/module_4/file_1.py
++++ b/src/module_4/file_1.py
+@@ -1,3 +1,48 @@
+ def fn_1():
+-    return 28
++    # FIXME risky null deref
++    return 91
+",1,synthetic_demo,2025-07-13 19:00:00+00:00,True
+demo/payments-service,1110,015edce63e7e8c27b10a3067d799512cc578500f,12624b5e96b026036d42bada9f0bf986c3555ed9,carol,640.0,5,97,33,130.0,"diff --git a/src/module_5/file_0.py b/src/module_5/file_0.py
+--- a/src/module_5/file_0.py
++++ b/src/module_5/file_0.py
+@@ -1,3 +1,22 @@
+ def fn_0():
+-    return 33
++    # FIXME risky null deref
++    return 97
+diff --git a/src/module_5/file_1.py b/src/module_5/file_1.py
+--- a/src/module_5/file_1.py
++++ b/src/module_5/file_1.py
+@@ -1,3 +1,22 @@
+ def fn_1():
+-    return 33
++    # FIXME risky null deref
++    return 98
+diff --git a/src/module_5/file_2.py b/src/module_5/file_2.py
+--- a/src/module_5/file_2.py
++++ b/src/module_5/file_2.py
+@@ -1,3 +1,22 @@
+ def fn_2():
+-    return 33
++    # FIXME risky null deref
++    return 99
+diff --git a/src/module_5/file_3.py b/src/module_5/file_3.py
+--- a/src/module_5/file_3.py
++++ b/src/module_5/file_3.py
+@@ -1,3 +1,22 @@
+ def fn_3():
+-    return 33
++    # FIXME risky null deref
++    return 100
+diff --git a/src/module_5/file_4.py b/src/module_5/file_4.py
+--- a/src/module_5/file_4.py
++++ b/src/module_5/file_4.py
+@@ -1,3 +1,22 @@
+ def fn_4():
+-    return 33
++    # FIXME risky null deref
++    return 101
+",1,synthetic_demo,2025-07-15 20:00:00+00:00,True
+demo/inventory-api,1111,48a2c75c2f158ea6be29f459f5ab183fc6be00a4,fb89bc848761cbd9d7a9578640a915faae895784,dave,653.0,8,104,38,142.0,"diff --git a/src/module_6/file_0.py b/src/module_6/file_0.py
+--- a/src/module_6/file_0.py
++++ b/src/module_6/file_0.py
+@@ -1,3 +1,16 @@
+ def fn_0():
+-    return 38
++    # FIXME risky null deref
++    return 104
+diff --git a/src/module_6/file_1.py b/src/module_6/file_1.py
+--- a/src/module_6/file_1.py
++++ b/src/module_6/file_1.py
+@@ -1,3 +1,16 @@
+ def fn_1():
+-    return 38
++    # FIXME risky null deref
++    return 105
+diff --git a/src/module_6/file_2.py b/src/module_6/file_2.py
+--- a/src/module_6/file_2.py
++++ b/src/module_6/file_2.py
+@@ -1,3 +1,16 @@
+ def fn_2():
+-    return 38
++    # FIXME risky null deref
++    return 106
+diff --git a/src/module_6/file_3.py b/src/module_6/file_3.py
+--- a/src/module_6/file_3.py
++++ b/src/module_6/file_3.py
+@@ -1,3 +1,16 @@
+ def fn_3():
+-    return 38
++    # FIXME risky null deref
++    return 107
+diff --git a/src/module_6/file_4.py b/src/module_6/file_4.py
+--- a/src/module_6/file_4.py
++++ b/src/module_6/file_4.py
+@@ -1,3 +1,16 @@
+ def fn_4():
+-    return 38
++    # FIXME risky null deref
++    return 108
+diff --git a/src/module_6/file_5.py b/src/module_6/file_5.py
+--- a/src/module_6/file_5.py
++++ b/src/module_6/file_5.py
+@@ -1,3 +1,16 @@
+ def fn_5():
+-    return 38
++    # FIXME risky null deref
++    return 109
+diff --git a/src/module_6/file_6.py b/src/module_6/file_6.py
+--- a/src/module_6/file_6.py
++++ b/src/module_6/file_6.py
+@@ -1,3 +1,16 @@
+ def fn_6():
+-    return 38
++    # FIXME risky null deref
++    return 110
+diff --git a/src/module_6/file_7.py b/src/module_6/file_7.py
+--- a/src/module_6/file_7.py
++++ b/src/module_6/file_7.py
+@@ -1,3 +1,16 @@
+ def fn_7():
+-    return 38
++    # FIXME risky null deref
++    return 111
+",1,synthetic_demo,2025-07-15 21:00:00+00:00,True
+demo/auth-gateway,1112,f256c774db6982f7f5ed1e77090a45dea47c2305,1cd32abe61b09ceeeef98a683090ae03b23b1a97,erin,666.0,3,111,3,114.0,"diff --git a/src/module_0/file_0.py b/src/module_0/file_0.py
+--- a/src/module_0/file_0.py
++++ b/src/module_0/file_0.py
+@@ -1,3 +1,40 @@
+ def fn_0():
+-    return 3
++    # refactor helper
++    return 111
+diff --git a/src/module_0/file_1.py b/src/module_0/file_1.py
+--- a/src/module_0/file_1.py
++++ b/src/module_0/file_1.py
+@@ -1,3 +1,40 @@
+ def fn_1():
+-    return 3
++    # refactor helper
++    return 112
+diff --git a/src/module_0/file_2.py b/src/module_0/file_2.py
+--- a/src/module_0/file_2.py
++++ b/src/module_0/file_2.py
+@@ -1,3 +1,40 @@
+ def fn_2():
+-    return 3
++    # refactor helper
++    return 113
+",0,synthetic_demo,2025-07-15 22:00:00+00:00,True
+demo/billing-worker,1113,5908eaa25ee0d00f8e28a3a6284c1bd88ed59d78,27d0887ca8797756af3efbae5051bb4b715c0b05,frank,679.0,6,118,8,126.0,"diff --git a/src/module_1/file_0.py b/src/module_1/file_0.py
+--- a/src/module_1/file_0.py
++++ b/src/module_1/file_0.py
+@@ -1,3 +1,22 @@
+ def fn_0():
+-    return 8
++    # refactor helper
++    return 118
+diff --git a/src/module_1/file_1.py b/src/module_1/file_1.py
+--- a/src/module_1/file_1.py
++++ b/src/module_1/file_1.py
+@@ -1,3 +1,22 @@
+ def fn_1():
+-    return 8
++    # refactor helper
++    return 119
+diff --git a/src/module_1/file_2.py b/src/module_1/file_2.py
+--- a/src/module_1/file_2.py
++++ b/src/module_1/file_2.py
+@@ -1,3 +1,22 @@
+ def fn_2():
+-    return 8
++    # refactor helper
++    return 120
+diff --git a/src/module_1/file_3.py b/src/module_1/file_3.py
+--- a/src/module_1/file_3.py
++++ b/src/module_1/file_3.py
+@@ -1,3 +1,22 @@
+ def fn_3():
+-    return 8
++    # refactor helper
++    return 121
+diff --git a/src/module_1/file_4.py b/src/module_1/file_4.py
+--- a/src/module_1/file_4.py
++++ b/src/module_1/file_4.py
+@@ -1,3 +1,22 @@
+ def fn_4():
+-    return 8
++    # refactor helper
++    return 122
+diff --git a/src/module_1/file_5.py b/src/module_1/file_5.py
+--- a/src/module_1/file_5.py
++++ b/src/module_1/file_5.py
+@@ -1,3 +1,22 @@
+ def fn_5():
+-    return 8
++    # refactor helper
++    return 123
+",0,synthetic_demo,2025-07-15 23:00:00+00:00,True
+demo/search-indexer,1114,2f9a907a89866f71d33db9ee901e4ba8b5323d0b,6d81b6d827b9e2ac7734d20173d144522445e656,alice,692.0,1,5,13,18.0,"diff --git a/src/module_2/file_0.py b/src/module_2/file_0.py
+--- a/src/module_2/file_0.py
++++ b/src/module_2/file_0.py
+@@ -1,3 +1,8 @@
+ def fn_0():
+-    return 13
++    # refactor helper
++    return 5
+",0,synthetic_demo,2025-07-16 00:00:00+00:00,True
+demo/payments-service,1115,9ed46039e07f6f841111fbc47a43225b197e08c8,f8a9228bddb8f423894e6ab94af55851694d2aa0,bob,705.0,4,12,18,30.0,"diff --git a/src/module_3/file_0.py b/src/module_3/file_0.py
+--- a/src/module_3/file_0.py
++++ b/src/module_3/file_0.py
+@@ -1,3 +1,6 @@
+ def fn_0():
+-    return 18
++    # refactor helper
++    return 12
+diff --git a/src/module_3/file_1.py b/src/module_3/file_1.py
+--- a/src/module_3/file_1.py
++++ b/src/module_3/file_1.py
+@@ -1,3 +1,6 @@
+ def fn_1():
+-    return 18
++    # refactor helper
++    return 13
+diff --git a/src/module_3/file_2.py b/src/module_3/file_2.py
+--- a/src/module_3/file_2.py
++++ b/src/module_3/file_2.py
+@@ -1,3 +1,6 @@
+ def fn_2():
+-    return 18
++    # refactor helper
++    return 14
+diff --git a/src/module_3/file_3.py b/src/module_3/file_3.py
+--- a/src/module_3/file_3.py
++++ b/src/module_3/file_3.py
+@@ -1,3 +1,6 @@
+ def fn_3():
+-    return 18
++    # refactor helper
++    return 15
+",0,synthetic_demo,2025-07-18 01:00:00+00:00,True
+demo/inventory-api,1116,fa027ed45ea1ac8b914d23c8b0d35c0b9cc44b72,a2eb6166f55b5b593f9e2dc30aa6e1d60d9c77b7,carol,718.0,7,19,23,42.0,"diff --git a/src/module_4/file_0.py b/src/module_4/file_0.py
+--- a/src/module_4/file_0.py
++++ b/src/module_4/file_0.py
+@@ -1,3 +1,5 @@
+ def fn_0():
+-    return 23
++    # refactor helper
++    return 19
+diff --git a/src/module_4/file_1.py b/src/module_4/file_1.py
+--- a/src/module_4/file_1.py
++++ b/src/module_4/file_1.py
+@@ -1,3 +1,5 @@
+ def fn_1():
+-    return 23
++    # refactor helper
++    return 20
+diff --git a/src/module_4/file_2.py b/src/module_4/file_2.py
+--- a/src/module_4/file_2.py
++++ b/src/module_4/file_2.py
+@@ -1,3 +1,5 @@
+ def fn_2():
+-    return 23
++    # refactor helper
++    return 21
+diff --git a/src/module_4/file_3.py b/src/module_4/file_3.py
+--- a/src/module_4/file_3.py
++++ b/src/module_4/file_3.py
+@@ -1,3 +1,5 @@
+ def fn_3():
+-    return 23
++    # refactor helper
++    return 22
+diff --git a/src/module_4/file_4.py b/src/module_4/file_4.py
+--- a/src/module_4/file_4.py
++++ b/src/module_4/file_4.py
+@@ -1,3 +1,5 @@
+ def fn_4():
+-    return 23
++    # refactor helper
++    return 23
+diff --git a/src/module_4/file_5.py b/src/module_4/file_5.py
+--- a/src/module_4/file_5.py
++++ b/src/module_4/file_5.py
+@@ -1,3 +1,5 @@
+ def fn_5():
+-    return 23
++    # refactor helper
++    return 24
+diff --git a/src/module_4/file_6.py b/src/module_4/file_6.py
+--- a/src/module_4/file_6.py
++++ b/src/module_4/file_6.py
+@@ -1,3 +1,5 @@
+ def fn_6():
+-    return 23
++    # refactor helper
++    return 25
+",0,synthetic_demo,2025-07-18 02:00:00+00:00,True
+demo/auth-gateway,1117,5b48fe6c1a3eeb8af248a6c66f917e9a9e774ba5,1c806d6a8d8823b6f758cf3cb9b46dcdc4be7b14,dave,731.0,2,26,28,54.0,"diff --git a/src/module_5/file_0.py b/src/module_5/file_0.py
+--- a/src/module_5/file_0.py
++++ b/src/module_5/file_0.py
+@@ -1,3 +1,16 @@
+ def fn_0():
+-    return 28
++    # FIXME risky null deref
++    return 26
+diff --git a/src/module_5/file_1.py b/src/module_5/file_1.py
+--- a/src/module_5/file_1.py
++++ b/src/module_5/file_1.py
+@@ -1,3 +1,16 @@
+ def fn_1():
+-    return 28
++    # FIXME risky null deref
++    return 27
+",1,synthetic_demo,2025-07-18 03:00:00+00:00,True
+demo/billing-worker,1118,b8e7b6553b784f15231e2ba12f58b4737d99f13b,a4012088c0b7737f51b62b55be7d82d5c6d7fed7,erin,744.0,5,33,33,66.0,"diff --git a/src/module_6/file_0.py b/src/module_6/file_0.py
+--- a/src/module_6/file_0.py
++++ b/src/module_6/file_0.py
+@@ -1,3 +1,9 @@
+ def fn_0():
+-    return 33
++    # refactor helper
++    return 33
+diff --git a/src/module_6/file_1.py b/src/module_6/file_1.py
+--- a/src/module_6/file_1.py
++++ b/src/module_6/file_1.py
+@@ -1,3 +1,9 @@
+ def fn_1():
+-    return 33
++    # refactor helper
++    return 34
+diff --git a/src/module_6/file_2.py b/src/module_6/file_2.py
+--- a/src/module_6/file_2.py
++++ b/src/module_6/file_2.py
+@@ -1,3 +1,9 @@
+ def fn_2():
+-    return 33
++    # refactor helper
++    return 35
+diff --git a/src/module_6/file_3.py b/src/module_6/file_3.py
+--- a/src/module_6/file_3.py
++++ b/src/module_6/file_3.py
+@@ -1,3 +1,9 @@
+ def fn_3():
+-    return 33
++    # refactor helper
++    return 36
+diff --git a/src/module_6/file_4.py b/src/module_6/file_4.py
+--- a/src/module_6/file_4.py
++++ b/src/module_6/file_4.py
+@@ -1,3 +1,9 @@
+ def fn_4():
+-    return 33
++    # refactor helper
++    return 37
+",0,synthetic_demo,2025-07-18 04:00:00+00:00,True
+demo/search-indexer,1119,ebbb3fc83db6271f1981c5e242ab6ebd017faeec,f17eb5002fd5d797bbd4ef5c420f647761c00055,frank,757.0,8,40,38,78.0,"diff --git a/src/module_0/file_0.py b/src/module_0/file_0.py
+--- a/src/module_0/file_0.py
++++ b/src/module_0/file_0.py
+@@ -1,3 +1,8 @@
+ def fn_0():
+-    return 38
++    # refactor helper
++    return 40
+diff --git a/src/module_0/file_1.py b/src/module_0/file_1.py
+--- a/src/module_0/file_1.py
++++ b/src/module_0/file_1.py
+@@ -1,3 +1,8 @@
+ def fn_1():
+-    return 38
++    # refactor helper
++    return 41
+diff --git a/src/module_0/file_2.py b/src/module_0/file_2.py
+--- a/src/module_0/file_2.py
++++ b/src/module_0/file_2.py
+@@ -1,3 +1,8 @@
+ def fn_2():
+-    return 38
++    # refactor helper
++    return 42
+diff --git a/src/module_0/file_3.py b/src/module_0/file_3.py
+--- a/src/module_0/file_3.py
++++ b/src/module_0/file_3.py
+@@ -1,3 +1,8 @@
+ def fn_3():
+-    return 38
++    # refactor helper
++    return 43
+diff --git a/src/module_0/file_4.py b/src/module_0/file_4.py
+--- a/src/module_0/file_4.py
++++ b/src/module_0/file_4.py
+@@ -1,3 +1,8 @@
+ def fn_4():
+-    return 38
++    # refactor helper
++    return 44
+diff --git a/src/module_0/file_5.py b/src/module_0/file_5.py
+--- a/src/module_0/file_5.py
++++ b/src/module_0/file_5.py
+@@ -1,3 +1,8 @@
+ def fn_5():
+-    return 38
++    # refactor helper
++    return 45
+diff --git a/src/module_0/file_6.py b/src/module_0/file_6.py
+--- a/src/module_0/file_6.py
++++ b/src/module_0/file_6.py
+@@ -1,3 +1,8 @@
+ def fn_6():
+-    return 38
++    # refactor helper
++    return 46
+diff --git a/src/module_0/file_7.py b/src/module_0/file_7.py
+--- a/src/module_0/file_7.py
++++ b/src/module_0/file_7.py
+@@ -1,3 +1,8 @@
+ def fn_7():
+-    return 38
++    # refactor helper
++    return 47
+",0,synthetic_demo,2025-07-17 12:00:00+00:00,True
