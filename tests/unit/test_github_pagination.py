@@ -8,9 +8,18 @@ from coderisk.data.github_client import GitHubClient
 
 
 def test_paginates_until_limit() -> None:
+    def make(n: int) -> dict:
+        return {
+            "number": n,
+            "title": f"t{n}",
+            "user": {"login": "a"},
+            "base": {"sha": "b"},
+            "head": {"sha": "c"},
+        }
+
     pages = {
-        1: [{"number": i, "title": f"t{i}", "user": {"login": "a"}, "base": {"sha": "b"}, "head": {"sha": "c"}} for i in range(1, 3)],
-        2: [{"number": i, "title": f"t{i}", "user": {"login": "a"}, "base": {"sha": "b"}, "head": {"sha": "c"}} for i in range(3, 5)],
+        1: [make(i) for i in range(1, 101)],
+        2: [make(i) for i in range(101, 201)],
     }
 
     def fake(method: str, path: str, params=None):  # noqa: ANN001
@@ -19,5 +28,7 @@ def test_paginates_until_limit() -> None:
         return httpx.Response(200, json=pages.get(page, []), request=req)
 
     client = GitHubClient(request_fn=fake)
-    rows = client.list_pull_requests("acme/demo", limit=3)
-    assert [r["number"] for r in rows] == [1, 2, 3]
+    rows = client.list_pull_requests("acme/demo", limit=105)
+    assert len(rows) == 105
+    assert rows[0]["number"] == 1
+    assert rows[-1]["number"] == 105

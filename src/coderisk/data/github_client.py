@@ -81,7 +81,7 @@ class GitHubClient:
         owner, name = repo.split("/", 1)
         results: list[dict[str, Any]] = []
         page = 1
-        per_page = min(100, max(1, limit))
+        per_page = 100
         while len(results) < limit:
             response = self._get(
                 f"/repos/{owner}/{name}/pulls",
