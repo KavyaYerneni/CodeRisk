@@ -46,7 +46,13 @@ reports/experiments/**
 # Allow committed comparison/repro docs written in phase 9/14
 !reports/metrics/model_comparison.json
 !reports/metrics/model_comparison.md
+!reports/metrics/xgboost_demo.json
+!reports/metrics/xgboost_demo.md
+!reports/metrics/codebert_demo.json
+!reports/metrics/codebert_demo.md
+!reports/metrics/benchmark_api.json
 !reports/reproducibility_report.md
+!reports/resume_claims.md
 
 # IDE / OS
 .idea/
