@@ -38,25 +38,29 @@ def export_codebert_onnx(
         truncation=True,
         max_length=max_length,
     )
-    input_names = ["input_ids", "attention_mask"]
-    dynamic_axes = {
-        "input_ids": {0: "batch", 1: "sequence"},
-        "attention_mask": {0: "batch", 1: "sequence"},
-        "logits": {0: "batch"},
-    }
-    if "token_type_ids" in dummy:
-        input_names.append("token_type_ids")
-        dynamic_axes["token_type_ids"] = {0: "batch", 1: "sequence"}
 
-    args = tuple(dummy[name] for name in input_names)
+    class _LogitsWrapper(torch.nn.Module):
+        def __init__(self, inner: torch.nn.Module) -> None:
+            super().__init__()
+            self.inner = inner
+
+        def forward(self, input_ids: torch.Tensor, attention_mask: torch.Tensor) -> torch.Tensor:
+            return self.inner(input_ids=input_ids, attention_mask=attention_mask).logits
+
+    wrapped = _LogitsWrapper(model)
     torch.onnx.export(
-        model,
-        args if len(args) > 1 else args[0],
+        wrapped,
+        (dummy["input_ids"], dummy["attention_mask"]),
         str(output_path),
-        input_names=input_names,
+        input_names=["input_ids", "attention_mask"],
         output_names=["logits"],
-        dynamic_axes=dynamic_axes,
+        dynamic_axes={
+            "input_ids": {0: "batch", 1: "sequence"},
+            "attention_mask": {0: "batch", 1: "sequence"},
+            "logits": {0: "batch"},
+        },
         opset_version=opset,
+        dynamo=False,
     )
     logger.info("exported_onnx path=%s", output_path)
     return output_path
