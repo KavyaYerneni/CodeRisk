@@ -1,0 +1,5 @@
+{
+  "ok": true,
+  "max_abs_diff": 1.1175870895385742e-07,
+  "note": "Measured locally against artifacts/codebert; ONNX weights are not committed."
+}
