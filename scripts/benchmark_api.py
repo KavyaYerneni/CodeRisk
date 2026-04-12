@@ -115,7 +115,12 @@ def run_benchmark(
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description="Benchmark CodeRisk API")
     parser.add_argument("--base-url", default="http://127.0.0.1:8742")
-    parser.add_argument("--n", type=int, default=100, help="Timed single requests (>=100 preferred)")
+    parser.add_argument(
+        "--n",
+        type=int,
+        default=100,
+        help="Timed single requests (>=100 preferred)",
+    )
     parser.add_argument("--warmup", type=int, default=10)
     parser.add_argument("--timeout", type=float, default=30.0)
     parser.add_argument("--batch-size", type=int, default=8)
