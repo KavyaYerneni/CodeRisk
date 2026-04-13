@@ -51,6 +51,7 @@ reports/experiments/**
 !reports/metrics/codebert_demo.json
 !reports/metrics/codebert_demo.md
 !reports/metrics/benchmark_api.json
+!reports/metrics/benchmark_api.md
 !reports/metrics/onnx_parity.json
 !reports/reproducibility_report.md
 !reports/resume_claims.md
