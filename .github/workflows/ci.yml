@@ -1,0 +1,29 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install
+        run: |
+          python -m pip install -U pip
+          pip install -e ".[dev]"
+      - name: Lint
+        run: ruff check src tests scripts
+      - name: Unit tests
+        run: python -m pytest tests/unit -q
+      - name: Train demo XGBoost for API tests
+        run: python scripts/train_xgboost.py --config configs/demo.yaml --output-dir artifacts/xgboost
+      - name: Integration tests
+        run: python -m pytest tests/integration -q
+        env:
+          CODERISK_MODEL_DIR: artifacts/xgboost
