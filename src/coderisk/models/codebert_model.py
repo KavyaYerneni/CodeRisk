@@ -10,7 +10,11 @@ from typing import Any
 import numpy as np
 import torch
 from torch.utils.data import DataLoader, Dataset
-from transformers import AutoModelForSequenceClassification, AutoTokenizer, get_linear_schedule_with_warmup
+from transformers import (
+    AutoModelForSequenceClassification,
+    AutoTokenizer,
+    get_linear_schedule_with_warmup,
+)
 
 from coderisk.logging_config import get_logger
 from coderisk.models.tokenizer import build_codebert_text

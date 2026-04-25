@@ -2,7 +2,8 @@
 
 from __future__ import annotations
 
-from typing import Any, Mapping
+from collections.abc import Mapping
+from typing import Any
 
 
 def build_codebert_text(row: Mapping[str, Any], *, max_diff_chars: int = 2000) -> str:

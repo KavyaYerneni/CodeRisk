@@ -2,8 +2,9 @@
 
 from __future__ import annotations
 
+from collections.abc import Mapping
 from datetime import datetime
-from typing import Any, Mapping
+from typing import Any
 
 
 def extract_metadata_features(row: Mapping[str, Any]) -> dict[str, float]:

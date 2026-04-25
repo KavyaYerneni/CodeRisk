@@ -16,7 +16,11 @@ from coderisk.evaluation.metrics import binary_classification_metrics
 from coderisk.evaluation.plots import save_roc_pr_curves
 from coderisk.evaluation.ranking import precision_at_top_fraction, recall_at_top_fraction
 from coderisk.evaluation.reports import write_json_report, write_markdown_report
-from coderisk.features.feature_pipeline import fit_transform_features, save_feature_schema, save_preprocess
+from coderisk.features.feature_pipeline import (
+    fit_transform_features,
+    save_feature_schema,
+    save_preprocess,
+)
 from coderisk.logging_config import get_logger, setup_logging
 from coderisk.models.calibration import calibration_summary
 from coderisk.models.xgboost_model import predict_proba, save_xgboost_bundle, train_xgboost

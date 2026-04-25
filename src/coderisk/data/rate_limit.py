@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import time
-from typing import Mapping
+from collections.abc import Mapping
 
 
 def seconds_until_reset(headers: Mapping[str, str], *, now: float | None = None) -> float:
