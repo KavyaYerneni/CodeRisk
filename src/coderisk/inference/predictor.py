@@ -6,10 +6,10 @@ from pathlib import Path
 from typing import Any
 
 import joblib
-import numpy as np
 import pandas as pd
+from xgboost import XGBClassifier
 
-from coderisk.features.feature_pipeline import build_feature_frame, row_to_features
+from coderisk.features.feature_pipeline import row_to_features
 from coderisk.models.xgboost_model import load_xgboost_model, predict_proba
 from coderisk.schemas import PredictRequest, PredictResponse
 
@@ -17,9 +17,9 @@ from coderisk.schemas import PredictRequest, PredictResponse
 class RiskPredictor:
     def __init__(self, model_dir: Path | str) -> None:
         self.model_dir = Path(model_dir)
-        self.model = None
+        self.model: XGBClassifier | None = None
         self.feature_names: list[str] = []
-        self.preprocess = None
+        self.preprocess: Any | None = None
         self.model_name = "xgboost"
         self.model_version = "0.1.0"
         self._load()
@@ -43,7 +43,7 @@ class RiskPredictor:
         return self.model is not None and self.preprocess is not None
 
     def predict_one(self, req: PredictRequest) -> PredictResponse:
-        if not self.ready:
+        if self.model is None or self.preprocess is None:
             raise RuntimeError("Model not loaded")
         row = req.model_dump()
         frame = pd.DataFrame([row_to_features(row)])
