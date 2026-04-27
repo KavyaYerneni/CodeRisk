@@ -24,3 +24,7 @@ Results write to `reports/metrics/benchmark_api.json` (raw sample latencies incl
 - Throughput (requests/sec over the timed window)
 - Optional batch latency summary
 - Client process RSS when available
+
+## Checked-in example
+
+A localhost run is saved at `reports/metrics/benchmark_api.md` (measured; not production latency).
