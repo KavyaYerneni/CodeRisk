@@ -29,3 +29,7 @@ Build an ML pull-request risk classifier that predicts whether a code change is 
 - Secrets from env only; never committed.
 - Author: Kavya Yerneni \<kavya.yerneni@sjsu.edu\>; commit dates 2026-01-29 … 2026-05-05.
 - Tests after each phase before continuing.
+
+## Status
+
+Phases 1–14 implemented in-repo (demo-first). See README and `reports/reproducibility_report.md`.
