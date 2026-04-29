@@ -1,4 +1,4 @@
-.PHONY: install test lint typecheck health demo-data train-xgb train-codebert api benchmark docker-build docker-up
+.PHONY: help install test lint typecheck health demo-data train-xgb train-codebert api benchmark docker-build docker-up
 
 install:
 	python -m pip install -e ".[dev]"
