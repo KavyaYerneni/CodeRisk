@@ -21,7 +21,7 @@ jobs:
         run: ruff check src tests scripts
       - name: Unit tests
         run: python -m pytest tests/unit -q
-      - name: Train demo XGBoost for API tests
+      - name: Train demo XGBoost for API integration tests
         run: python scripts/train_xgboost.py --config configs/demo.yaml --output-dir artifacts/xgboost
       - name: Integration tests
         run: python -m pytest tests/integration -q
