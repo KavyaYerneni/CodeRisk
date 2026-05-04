@@ -32,4 +32,4 @@ Build an ML pull-request risk classifier that predicts whether a code change is 
 
 ## Status
 
-Phases 1–14 implemented in-repo (demo-first). See README and `reports/reproducibility_report.md`.
+Phases 1–14 complete in-repo (demo-first). See README and `reports/reproducibility_report.md`.
